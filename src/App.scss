@@ -1,0 +1,10 @@
+@import "./util/scss/base";
+@import "./util/scss/mixins";
+
+.App {
+  background-color: rgb(65, 207, 101);
+  height: 100vh; //test
+  @include respond(tap-port) {
+    background-color: rgb(48, 197, 197);
+  }
+}
