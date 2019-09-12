@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
 
 function App() {
+  console.log(process.env);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {"env : " + process.env.REACT_APP_BASE_URL}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
