@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.scss";
+import Content from "./layout/Content";
 
 function App() {
-  console.log(process.env);
-  return <div className="App"></div>;
+  return <Content></Content>;
 }
 
 export default App;
