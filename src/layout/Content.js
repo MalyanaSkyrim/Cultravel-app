@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "./Layout";
+import ContentRouter from "../routes/ContentRouter";
 
 const Content = () => {
   return (
     <Layout>
-      <p>This is the content</p>
+      <ContentRouter></ContentRouter>
     </Layout>
   );
 };

@@ -13,12 +13,12 @@ generator.exec([
           {
             type: "file",
             name: "[name].js",
-            content: `import React from 'react';\nimport './[name]-style.scss';\n\n const [name] = () => {\n\t// instruction\n\t} \n\nexport default [name];`
+            content: `import React from 'react';\nimport './[name]-style.scss';\n\n const [name] = () => {\n\t return <div></div> \t} \n\nexport default [name];`
           },
           {
             type: "file",
             name: "[name]Container.js",
-            content: `import React from 'react';\n\n const [name]Container = () => {\n\t// instruction\n\t} \n\nexport default [name]Container;`
+            content: `import React from 'react';\nimport [name] from "./[name]";\n\n const [name]Container = () => {\n\t return <[name]/>; \n\t} \n\nexport default [name]Container;`
           }
         ]
       }
@@ -37,12 +37,12 @@ generator.exec([
           {
             type: "file",
             name: "[name].js",
-            content: `import React from 'react';\nimport './[name]-style.scss';\n\n const [name] = () => {\n\t// instruction\n\t} \n\nexport default [name];`
+            content: `import React from 'react';\nimport './[name]-style.scss';\n\n const [name] = () => {\n\t return <div></div> \t} \n\nexport default [name];`
           },
           {
             type: "file",
             name: "[name]Container.js",
-            content: `import React from 'react';\n\n const [name]Container = () => {\n\t// instruction\n\t} \n\nexport default [name]Container;`
+            content: `import React from 'react';\nimport [name] from "./[name]";\n\n const [name]Container = () => {\n\t return <[name]/>; \n\t} \n\nexport default [name]Container;`
           }
         ]
       }
