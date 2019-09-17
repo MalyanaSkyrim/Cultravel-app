@@ -1,0 +1,23 @@
+
+- Header 
+  -- nabBar
+  -- HeaderHomePage
+  -- HeaderCity --> FoodAndDrinks ...
+        ---NavBarCity      
+ 
+- content
+
+   -- HomePage
+   -- CityPage
+    --- AboutCity
+    --- BestAttractions
+    ???    
+    --- FoodDrinksPage, Hotels, ...
+        -- ArbreLink, ex : Rabat -> FoodAndDrinks
+        -- SearchWidget 
+          --- Filter
+        -- ListItems  
+          --- CardItem    
+        -- ItemPage   
+          --- ItemComments
+- Footer
