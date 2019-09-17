@@ -1,11 +1,13 @@
 import React from "react";
-import NavBar from "./../NavBar/NabBar";
+import NavBar from "../NavBar/NabBar";
+import { Link } from "react-router-dom";
+import HeaderRouter from "../../../routes/HeaderRouter";
 
-import "./header.scss";
 const Header = () => {
   return (
     <div className="header">
       <NavBar></NavBar>
+      <HeaderRouter></HeaderRouter>
     </div>
   );
 };
