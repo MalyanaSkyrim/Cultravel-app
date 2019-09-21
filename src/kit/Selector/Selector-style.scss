@@ -1,0 +1,45 @@
+.selector {
+  position: relative;
+  &__input {
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    font-family: inherit;
+    color: var(--gray);
+    border-radius: 3rem;
+    padding: 1.7rem 6rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in;
+    &:focus {
+      padding-right: 12rem;
+    }
+  }
+
+  &:focus-within &__icon {
+    animation: check 0.3s 0.3s ease-in-out normal;
+  }
+
+  &__results {
+    position: absolute;
+    opacity: 0;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__icon {
+    color: var(--orange);
+    position: absolute;
+    left: 2rem;
+    top: 53%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes check {
+  0% {
+    transform: translateY(-50%) rotateY(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotateY(180deg);
+  }
+}

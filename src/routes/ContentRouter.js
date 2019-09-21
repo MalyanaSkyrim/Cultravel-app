@@ -6,13 +6,15 @@ import AttractionsPage from "../components/AttractionsPage/AttractionsPageContai
 import HotelsPage from "../components/HotelsPage/HotelsPageContainer";
 import FoodDrinkPage from "../components/FoodDrinkPage/FoodDrinkPageContainer";
 import PageItem from "../kit/PageItem/PageItemContainer";
-import AboutUs from "../components/AboutUs/AboutUs";
+import AboutUs from "../components/AboutUs/AboutUsContainer";
 import NotFound from "../components/NotFound/NotFoundContainer";
 
 const ContentRouter = () => {
   return (
     <Switch>
       <Route exact path="/" component={HomePage} />
+      <Route exact path="/about" component={AboutUs} />
+      <Route path="/not-found" component={NotFound}></Route>
       <CityRoutes></CityRoutes>
     </Switch>
   );
@@ -22,10 +24,10 @@ const CityRoutes = () => {
   return (
     <>
       <Route exact path="/city/:city_id" component={CityPage} />
-      <Route exact path="/about" component={AboutUs} />
       <HotelsRoutes></HotelsRoutes>
       <FoodDrinkRoutes></FoodDrinkRoutes>
       <AttractionsRoutes></AttractionsRoutes>
+      {/* <Redirect to="/not-found"></Redirect> */}
     </>
   );
 };
