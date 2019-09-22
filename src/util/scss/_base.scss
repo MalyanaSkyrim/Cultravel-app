@@ -9,6 +9,10 @@
 :root {
   //our font, distance, and font : varaiables.
   // --page-padding: 3rem;
+
+  --gray: #333333;
+  --orange: #ec4e20;
+  --darg-gray: #151515;
 }
 
 html {
@@ -16,7 +20,7 @@ html {
 }
 
 header {
-  height: calc(100vh - 60px);
+  height: 100vh;
 }
 
 body {
