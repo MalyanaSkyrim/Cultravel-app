@@ -24,9 +24,21 @@
   }
 }
 
+@mixin gradientImage($image, $from-color, $to-color) {
+  background-image: linear-gradient(to right bottom, $from-color, $to-color),
+    url($image);
+  background-size: cover;
+  background-position: top;
+}
+
 @mixin centerElement {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.heading-tertiary {
+  color: var(--orange);
+  margin-bottom: 1rem;
 }

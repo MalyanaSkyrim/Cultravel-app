@@ -1,12 +1,17 @@
 .selector {
   position: relative;
-  &__input {
+  color: var(--gray);
+  font-size: 2rem;
+
+  & > div > div {
+  }
+
+  & input {
+    border-radius: 3rem;
     outline: none;
     border: none;
-    font-size: 2rem;
     font-family: inherit;
-    color: var(--gray);
-    border-radius: 3rem;
+    font-size: inherit;
     padding: 1.7rem 6rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease-in;
@@ -16,20 +21,33 @@
   }
 
   &:focus-within &__icon {
-    animation: check 0.3s 0.3s ease-in-out normal;
+    animation: check 0.7s 0.3s ease-in-out normal;
   }
 
-  &__results {
-    position: absolute;
-    opacity: 0;
-  }
   &__list {
     list-style: none;
+  }
+  &__result-item {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
   }
   &__icon {
     color: var(--orange);
     position: absolute;
     left: 2rem;
+    font-size: 2.5rem;
     top: 53%;
     transform: translateY(-50%);
   }
@@ -39,6 +57,7 @@
   0% {
     transform: translateY(-50%) rotateY(0deg);
   }
+
   100% {
     transform: translateY(-50%) rotateY(180deg);
   }

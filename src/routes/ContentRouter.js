@@ -1,18 +1,19 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import HomePage from "../components/HomePage/HomePage";
-import CityPage from "../components/CityPage/CityPage";
-import AttractionsPage from "../components/AttractionsPage/AttractionsPageContainer";
-import HotelsPage from "../components/HotelsPage/HotelsPageContainer";
-import FoodDrinkPage from "../components/FoodDrinkPage/FoodDrinkPageContainer";
+import ContentHomePage from "../components/ContentHomePage/ContentHomePageContainer";
+import ContentCityPage from "../components/ContentCityPage/ContentCityPageContainer";
+import ContentAttractionsPage from "../components/ContentAttractionsPage/ContentAttractionsPageContainer";
+import ContentHotelsPage from "../components/ContentHotelsPage/ContentHotelsPageContainer";
+import ContentFoodDrinkPage from "../components/ContentFoodDrinksPage/ContentFoodDrinksPageContainer";
 import PageItem from "../kit/PageItem/PageItemContainer";
 import AboutUs from "../components/AboutUs/AboutUsContainer";
 import NotFound from "../components/NotFound/NotFoundContainer";
+import ContentAttractionsPageContainer from "../components/ContentAttractionsPage/ContentAttractionsPageContainer";
 
 const ContentRouter = () => {
   return (
     <Switch>
-      <Route exact path="/" component={HomePage} />
+      <Route exact path="/" component={ContentHomePage} />
       <Route exact path="/about" component={AboutUs} />
       <Route path="/not-found" component={NotFound}></Route>
       <CityRoutes></CityRoutes>
@@ -23,7 +24,7 @@ const ContentRouter = () => {
 const CityRoutes = () => {
   return (
     <>
-      <Route exact path="/city/:city_id" component={CityPage} />
+      <Route exact path="/city/:city_id" component={ContentCityPage} />
       <HotelsRoutes></HotelsRoutes>
       <FoodDrinkRoutes></FoodDrinkRoutes>
       <AttractionsRoutes></AttractionsRoutes>
@@ -35,7 +36,11 @@ const CityRoutes = () => {
 const FoodDrinkRoutes = () => {
   return (
     <>
-      <Route exact path="/city/:city_id/food-drink" component={FoodDrinkPage} />
+      <Route
+        exact
+        path="/city/:city_id/food-drink"
+        component={ContentFoodDrinkPage}
+      />
       <Route
         exact
         path="/city/:city_id/food-drink/:food-drink_id"
@@ -48,7 +53,7 @@ const FoodDrinkRoutes = () => {
 const HotelsRoutes = () => {
   return (
     <>
-      <Route exact path="/city/:city_id/hotels" component={HotelsPage} />
+      <Route exact path="/city/:city_id/hotels" component={ContentHotelsPage} />
       <Route
         exact
         path="/city/:city_id/hotels/:hotel_id"
@@ -64,7 +69,7 @@ const AttractionsRoutes = () => {
       <Route
         exact
         path="/city/:city_id/attractions"
-        component={AttractionsPage}
+        component={ContentAttractionsPage}
       />
       <Route
         exact
