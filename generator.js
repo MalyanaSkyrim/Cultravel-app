@@ -13,7 +13,7 @@ generator.exec([
           {
             type: "file",
             name: "[name].js",
-            content: `import React from 'react';\nimport './[name]-style.scss';\n\n const [name] = () => {\n\t return <div></div> \t} \n\nexport default [name];`
+            content: `import React from 'react';\nimport './[name]-style.scss';\n\n const [name] = () => {\n\t return <div></div>; \n\t} \n\nexport default [name];`
           },
           {
             type: "file",

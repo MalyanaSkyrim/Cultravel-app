@@ -25,6 +25,16 @@
   }
 }
 
-.city-selector {
+.heading {
+  width: 60%;
   @include centerElement;
+  text-align: center;
+  & h2 {
+    color: white;
+    margin-bottom: 4rem;
+  }
+}
+
+.city-selector {
+  display: inline-block;
 }

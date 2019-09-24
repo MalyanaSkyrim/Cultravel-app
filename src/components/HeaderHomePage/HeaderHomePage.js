@@ -13,8 +13,15 @@ const HeaderHomePage = () => {
           Your browser is not supported !
         </video>
       </div>
-      <div className="city-selector">
-        <Selector></Selector>
+      <div className="heading">
+        <h1 className="heading--primary">Cultravel</h1>
+        <h2 className="heading--secondary">
+          discover moroccan traditions and cultures
+        </h2>
+
+        <div className="city-selector">
+          <Selector></Selector>
+        </div>
       </div>
     </header>
   );
