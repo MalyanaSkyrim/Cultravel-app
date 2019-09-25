@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Cultravel-app/static/css/main.304896fc.chunk.css",
-    "main.js": "/Cultravel-app/static/js/main.7fcbc0f0.chunk.js",
-    "main.js.map": "/Cultravel-app/static/js/main.7fcbc0f0.chunk.js.map",
+    "main.css": "/Cultravel-app/static/css/main.3d83361e.chunk.css",
+    "main.js": "/Cultravel-app/static/js/main.f8727177.chunk.js",
+    "main.js.map": "/Cultravel-app/static/js/main.f8727177.chunk.js.map",
     "runtime~main.js": "/Cultravel-app/static/js/runtime~main.0f9792e4.js",
     "runtime~main.js.map": "/Cultravel-app/static/js/runtime~main.0f9792e4.js.map",
     "static/css/2.04567b93.chunk.css": "/Cultravel-app/static/css/2.04567b93.chunk.css",
     "static/js/2.8abfd894.chunk.js": "/Cultravel-app/static/js/2.8abfd894.chunk.js",
     "static/js/2.8abfd894.chunk.js.map": "/Cultravel-app/static/js/2.8abfd894.chunk.js.map",
     "index.html": "/Cultravel-app/index.html",
-    "precache-manifest.fb66c3903ad9e55c5f9830a224f6f672.js": "/Cultravel-app/precache-manifest.fb66c3903ad9e55c5f9830a224f6f672.js",
+    "precache-manifest.df47fadb915c91a69c10a307e0da686f.js": "/Cultravel-app/precache-manifest.df47fadb915c91a69c10a307e0da686f.js",
     "service-worker.js": "/Cultravel-app/service-worker.js",
     "static/css/2.04567b93.chunk.css.map": "/Cultravel-app/static/css/2.04567b93.chunk.css.map",
-    "static/css/main.304896fc.chunk.css.map": "/Cultravel-app/static/css/main.304896fc.chunk.css.map",
+    "static/css/main.3d83361e.chunk.css.map": "/Cultravel-app/static/css/main.3d83361e.chunk.css.map",
     "static/media/SponsoredPlaces-style.scss": "/Cultravel-app/static/media/card_hotels_003.a0739ecd.jpg",
     "static/media/RecommendedPlaces-style.scss": "/Cultravel-app/static/media/test-bg.03574501.jpg",
     "static/media/styles.css": "/Cultravel-app/static/media/revicons.2feb69cc.eot"
