@@ -53,5 +53,66 @@
   }
   &--tertiary {
     margin-bottom: 1rem;
+    color: var(--orange);
+  }
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 1.6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+
+    //for the button element
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
+}
+
+.btn-text {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--orange);
+    display: inline-block;
+    border-bottom: 1px solid var(--orange);
+    transition: all 0.2s;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--orange);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0rem 0.6rem 1rem rgba(0, 0, 0, 0.2);
   }
 }
