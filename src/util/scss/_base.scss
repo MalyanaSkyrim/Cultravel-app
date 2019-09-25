@@ -11,7 +11,9 @@
   // --page-padding: 3rem;
 
   --gray: #333333;
-  --orange: #ec4e20;
+  --orange: #ff7500;
+  --light-orange: #ff8f2e5d;
+  --dark-orange: #e86c005d;
   --darg-gray: #151515;
 }
 
@@ -28,7 +30,5 @@ body {
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box;
-
-  font-size: 3rem;
-  color: white;
+  color: var(--gray);
 }

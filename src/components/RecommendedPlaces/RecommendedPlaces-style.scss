@@ -1,0 +1,82 @@
+@import "../../util/scss/mixins";
+.recommended-palces {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+
+  &__content {
+    text-align: left;
+    padding-left: 2rem;
+    width: 50%;
+    position: absolute;
+    bottom: 4rem;
+
+    & h3 {
+      font-size: 3rem;
+    }
+  }
+  &__read-more {
+    color: var(--orange);
+    margin-top: 1rem;
+  }
+  &__descp {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  &__slide {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    &--1 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.9136029411764706) 0%,
+          rgba(0, 0, 0, 0.4318102240896359) 48%,
+          rgba(0, 0, 0, 0) 62%
+        ),
+        url("../../assets/images/morocco-ouarzazate.jpg");
+    }
+    &--2 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.9136029411764706) 0%,
+          rgba(0, 0, 0, 0.4318102240896359) 48%,
+          rgba(0, 0, 0, 0) 62%
+        ),
+        url("../../assets/images/test-bg.jpg");
+    }
+    &--3 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.9136029411764706) 0%,
+          rgba(0, 0, 0, 0.4318102240896359) 48%,
+          rgba(0, 0, 0, 0) 62%
+        ),
+        url("../../assets/images/tanger.jpg");
+    }
+  }
+}
+
+.carousel .slide {
+  background-color: unset;
+}
+
+.carousel .control-dots .dot {
+  transition: opacity 0.25s ease-in;
+  opacity: 0.5;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+  outline: none;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  opacity: 1;
+  background: var(--orange);
+}

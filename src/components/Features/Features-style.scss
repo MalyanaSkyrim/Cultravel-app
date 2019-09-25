@@ -1,0 +1,26 @@
+.features {
+  padding: 15rem 0;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.feature-box {
+  width: 20%;
+  background-color: rgba(rgb(250, 250, 250), 0.8);
+  padding: 2rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0 4rem 1rem rgba(black, 0.12);
+  transition: all 0.15s;
+  text-align: center;
+  &__icon {
+    font-size: 5rem;
+    margin: 2rem 0;
+  }
+  &__text {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
