@@ -54,6 +54,8 @@
   &--tertiary {
     margin-bottom: 1rem;
     color: var(--orange);
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -64,10 +66,10 @@
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 3px;
+    padding: 1rem 2.5rem;
+    border-radius: 4rem;
     font-size: 1.6rem;
     display: inline-block;
-    border-radius: 10rem;
     transition: all 0.2s;
 
     //for the button element
@@ -87,6 +89,11 @@
   &:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
+
+  &--primary {
+    color: white;
+    background-color: var(--orange);
   }
 }
 

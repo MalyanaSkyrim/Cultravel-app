@@ -29,7 +29,8 @@ const NavBar = props => {
       ? {
           "--color": "var(--gray)",
           backgroundColor: "white",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.05)"
+          boxShadow: "0 4px 12px rgba(0,0,0,0.20)",
+          borderBottom: "1px solid rgba(171, 171, 171, 0.5)"
         }
       : {};
 
