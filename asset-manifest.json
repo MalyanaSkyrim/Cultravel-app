@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Cultravel-app/static/css/main.dbcb9fdc.chunk.css",
+    "main.js": "/Cultravel-app/static/js/main.cb0f6a63.chunk.js",
+    "main.js.map": "/Cultravel-app/static/js/main.cb0f6a63.chunk.js.map",
+    "runtime~main.js": "/Cultravel-app/static/js/runtime~main.0f9792e4.js",
+    "runtime~main.js.map": "/Cultravel-app/static/js/runtime~main.0f9792e4.js.map",
+    "static/css/2.3c1ddb0a.chunk.css": "/Cultravel-app/static/css/2.3c1ddb0a.chunk.css",
+    "static/js/2.8fe90fb5.chunk.js": "/Cultravel-app/static/js/2.8fe90fb5.chunk.js",
+    "static/js/2.8fe90fb5.chunk.js.map": "/Cultravel-app/static/js/2.8fe90fb5.chunk.js.map",
+    "index.html": "/Cultravel-app/index.html",
+    "precache-manifest.229d26a9c6f01023f338c6a6b6ed6a41.js": "/Cultravel-app/precache-manifest.229d26a9c6f01023f338c6a6b6ed6a41.js",
+    "service-worker.js": "/Cultravel-app/service-worker.js",
+    "static/css/2.3c1ddb0a.chunk.css.map": "/Cultravel-app/static/css/2.3c1ddb0a.chunk.css.map",
+    "static/css/main.dbcb9fdc.chunk.css.map": "/Cultravel-app/static/css/main.dbcb9fdc.chunk.css.map",
+    "static/media/RecommendedPlaces-style.scss": "/Cultravel-app/static/media/test-bg.03574501.jpg"
+  }
+}
