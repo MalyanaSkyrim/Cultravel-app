@@ -7,7 +7,7 @@ const Features = () => {
       <div className="features__row">
         <div className="feature-box ">
           <i className="feature-box__icon fas fa-globe-americas"></i>
-          <h3 className="heading-tertiary ">Explore the world</h3>
+          <h3 className="heading--tertiary ">Explore the world</h3>
           <p className="feature-box__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem sint unde, rem cumque minima alias quo repudiandae.
@@ -16,7 +16,7 @@ const Features = () => {
 
         <div className="feature-box ">
           <i className="feature-box__icon far fa-compass"></i>
-          <h3 className="heading-tertiary ">Meet nature</h3>
+          <h3 className="heading--tertiary ">Meet nature</h3>
           <p className="feature-box__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem sint unde, rem cumque minima alias quo repudiandae.
@@ -25,7 +25,7 @@ const Features = () => {
 
         <div className="feature-box ">
           <i className="feature-box__icon fas fa-map-signs"></i>
-          <h3 className="heading-tertiary ">Find your way</h3>
+          <h3 className="heading--tertiary ">Find your way</h3>
           <p className="feature-box__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem sint unde, rem cumque minima alias quo repudiandae.
