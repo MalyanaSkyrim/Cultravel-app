@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60aa542bc34342b2e925e856bc6435d1",
+    "revision": "b600c673fb08014380869bd63df9043d",
     "url": "/Cultravel-app/index.html"
   },
   {
-    "revision": "68d8a57024227d0fcafc",
+    "revision": "c11958d26815fb7ff807",
     "url": "/Cultravel-app/static/css/2.04567b93.chunk.css"
   },
   {
-    "revision": "727e32f0bb49696fef90",
-    "url": "/Cultravel-app/static/css/main.8c84abdd.chunk.css"
+    "revision": "a98b32de96ca9f326f8f",
+    "url": "/Cultravel-app/static/css/main.304896fc.chunk.css"
   },
   {
-    "revision": "68d8a57024227d0fcafc",
-    "url": "/Cultravel-app/static/js/2.955e0baa.chunk.js"
+    "revision": "c11958d26815fb7ff807",
+    "url": "/Cultravel-app/static/js/2.8abfd894.chunk.js"
   },
   {
-    "revision": "727e32f0bb49696fef90",
-    "url": "/Cultravel-app/static/js/main.39ceea52.chunk.js"
+    "revision": "a98b32de96ca9f326f8f",
+    "url": "/Cultravel-app/static/js/main.7fcbc0f0.chunk.js"
   },
   {
     "revision": "45d3c8340ee40659fbeb",
     "url": "/Cultravel-app/static/js/runtime~main.0f9792e4.js"
+  },
+  {
+    "revision": "270d97cc22296e68dbacf4a05a2762d1",
+    "url": "/Cultravel-app/static/media/card_hotels_001.270d97cc.jpg"
+  },
+  {
+    "revision": "e90b5b0f1ef3fb6441b9f1241ec82dd2",
+    "url": "/Cultravel-app/static/media/card_hotels_002.e90b5b0f.jpg"
+  },
+  {
+    "revision": "a0739ecd6903127382e2e6628f2c4057",
+    "url": "/Cultravel-app/static/media/card_hotels_003.a0739ecd.jpg"
   },
   {
     "revision": "c55e8a8e6f79467c0302ac2b2c46bd7b",
@@ -38,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "/Cultravel-app/static/media/revicons.2feb69cc.eot"
+  },
+  {
+    "revision": "a9984713a8a6af7ef86d782d24e4de64",
+    "url": "/Cultravel-app/static/media/tanger.a9984713.jpg"
   },
   {
     "revision": "03574501c3c1334d9ea6c763e9247f6d",
