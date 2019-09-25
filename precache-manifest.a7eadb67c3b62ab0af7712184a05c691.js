@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a665c4ca64077382140dffabd1967a15",
+    "revision": "178bc1426e1b7d572bc070473915f4d5",
     "url": "/Cultravel-app/index.html"
   },
   {
