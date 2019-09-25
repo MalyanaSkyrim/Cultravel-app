@@ -1,0 +1,136 @@
+.sponsored-places {
+  padding: 15rem 0;
+
+  &__slide {
+    width: 100%;
+    height: 60rem;
+    padding: 1rem;
+  }
+  &__content {
+    padding-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    height: 100%;
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.33);
+    background-color: white;
+  }
+  &__content > *:not(&__book) {
+    pointer-events: none;
+  }
+
+  &__background {
+    &--1 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.913603) 0%,
+          rgba(0, 0, 0, 0.43181) 50%,
+          rgba(0, 0, 0, 0) 80%
+        ),
+        url("../../assets/images/card_hotels_001.jpg");
+    }
+    &--2 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.913603) 0%,
+          rgba(0, 0, 0, 0.43181) 50%,
+          rgba(0, 0, 0, 0) 80%
+        ),
+        url("../../assets/images/card_hotels_002.jpg");
+    }
+    &--3 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.913603) 0%,
+          rgba(0, 0, 0, 0.43181) 50%,
+          rgba(0, 0, 0, 0) 80%
+        ),
+        url("../../assets/images/card_hotels_003.jpg");
+    }
+    &--4 {
+      background-image: linear-gradient(
+          70deg,
+          rgba(0, 0, 0, 0.913603) 0%,
+          rgba(0, 0, 0, 0.43181) 50%,
+          rgba(0, 0, 0, 0) 80%
+        ),
+        url("../../assets/images/card_hotels_002.jpg");
+    }
+    height: 45%;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+  }
+
+  &__tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    width: 30rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: #e91e63;
+    transform: rotate(-45deg) translate(-30%, -180%);
+    box-shadow: 0 6px 4px 1px #00000045;
+  }
+
+  &__title {
+    position: absolute;
+    left: 2rem;
+    top: 20%;
+    letter-spacing: 0.2rem;
+    & h3 {
+      font-size: 3rem;
+    }
+  }
+
+  &__descrp {
+    font-size: 2rem;
+    color: white;
+  }
+
+  &__properties {
+    width: 90%;
+    height: 40%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 4%;
+    text-align: center;
+    & > ul {
+      list-style: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+  }
+
+  &__property {
+    font-size: 2.5rem;
+    margin: 1rem 2rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid #33333352;
+    }
+  }
+  &__book {
+    text-align: center;
+  }
+}
+
+.react-multi-carousel-track {
+  padding: 1rem 0;
+}
+
+.react-multiple-carousel__arrow {
+  background-color: #71717133;
+  &::before {
+    color: var(--gray);
+  }
+  &:hover::before {
+    color: var(--orange);
+  }
+}
