@@ -36,7 +36,7 @@ html {
 
 header {
   height: 100vh;
-  @include respond(meduim-desktop) {
+  @include respond(meduim-screen) {
     height: 70vh;
   }
 }
@@ -53,14 +53,13 @@ body {
   clip-path: polygon(50% 14rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
   margin-top: -15rem;
   padding-top: 10rem;
-  @include respond(meduim-desktop) {
+  @include respond(meduim-screen) {
     clip-path: polygon(50% 20rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
     margin-top: -21rem;
-    padding-top: 20rem;
+    padding-top: 10rem;
   }
-  @include respond(tab-port) {
-    clip-path: polygon(50% 24rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
-    margin-top: -25rem;
-    padding-top: 20rem;
-  }
+}
+
+.row {
+  margin: 10rem 0;
 }

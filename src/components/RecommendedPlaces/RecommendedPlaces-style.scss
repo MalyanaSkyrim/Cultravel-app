@@ -30,11 +30,11 @@
   &__slide {
     height: 90vh;
 
-    @include respond(meduim-desktop) {
-      height: 40vh;
+    @include respond(meduim-screen) {
+      height: 56vh;
     }
     @include respond(phone) {
-      height: 56vh;
+      height: 40vh;
     }
     background-size: cover;
     background-position: center;

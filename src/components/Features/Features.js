@@ -3,7 +3,7 @@ import "./Features-style.scss";
 
 const Features = () => {
   return (
-    <div className="features">
+    <div className="features row">
       <div className="features__row">
         <div className="feature-box ">
           <i className="feature-box__icon fas fa-globe-americas"></i>

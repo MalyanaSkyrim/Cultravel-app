@@ -1,50 +1,23 @@
 @import "../../util/scss/mixins";
 
 .contactus {
-  position: relative;
-  height: calc(90vh + 10rem);
-  min-height: 460px;
-
-  @include respond(meduim-desktop) {
-    height: calc(70vh + 10rem);
-  }
-
-  @include respond(tab-port) {
-    height: calc(80vh + 10rem);
-  }
-  @include respond(phone) {
-    height: calc(60vh + 10rem);
-  }
-  transform: skewY(-10deg);
-  & > * {
-    transform: skewY(10deg);
-  }
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  margin: auto;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.3));
   &__container {
-    height: calc(90vh + 30rem);
-    min-height: 560px;
-    @include respond(meduim-desktop) {
-      height: calc(70vh + 30rem);
-    }
-    @include respond(tab-port) {
-      height: calc(80vh + 30rem);
-    }
-    @include respond(phone) {
-      height: calc(60vh + 30rem);
-    }
-    top: -10rem;
+    position: relative;
+
+    margin: auto;
     background-image: url("../../assets/images/chefchaouen-morocco.jpg");
     background-size: cover;
     background-position: top;
-    position: relative;
+    padding: 15rem 0;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   }
+
   &__form-links {
-    @include centerElement;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 6rem 3rem;
     width: 60%;
+    margin: auto;
     @include respond(phone) {
       width: 90%;
     }

@@ -55,12 +55,12 @@
     width: 50%;
     color: white;
   }
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-  height: 50%;
-  align-items: center;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 50%;
+    align-items: center;
+  }
 }

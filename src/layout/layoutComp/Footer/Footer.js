@@ -19,7 +19,7 @@ const Footer = () => {
           />
         </picture>
       </div>
-      <div className="row">
+      <div className="footer__row">
         <div className="footer__navigation">
           <ul className="footer__list">
             <li className="footer__item">

@@ -6,7 +6,7 @@ import RecommendedPlace from "./RecommendedPlace";
 
 const RecommendedPlaces = ({ data }) => {
   return (
-    <div className="recommended-palces">
+    <div className="recommended-palces row">
       <Carousel
         showThumbs={false}
         showStatus={false}

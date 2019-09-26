@@ -22,8 +22,8 @@
       @content;
     }
   }
-  @if ($breakpoint == meduim-desktop) {
-    @media (max-width: 65em) {
+  @if ($breakpoint == meduim-screen) {
+    @media (max-width: 65em) and (orientation: portrait) {
       @content;
     }
   }

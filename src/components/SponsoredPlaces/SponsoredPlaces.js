@@ -25,7 +25,7 @@ const responsive = {
 
 const SponsoredPlaces = () => {
   return (
-    <div className="sponsored-places">
+    <div className="sponsored-places row">
       <Carousel
         autoPlay
         autoPlaySpeed={3000}
