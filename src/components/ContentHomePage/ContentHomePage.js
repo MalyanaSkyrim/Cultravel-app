@@ -3,6 +3,7 @@ import "./ContentHomePage-style.scss";
 import Features from "../Features/FeaturesContainer";
 import RecommendedPlaces from "../RecommendedPlaces/RecommendedPlacesContainer";
 import SponsoredPlaces from "../SponsoredPlaces/SponsoredPlacesContainer";
+import Contactus from "../Contactus/ContactusContainer";
 
 const ContentHomePage = () => {
   return (
@@ -10,6 +11,7 @@ const ContentHomePage = () => {
       <Features></Features>
       <RecommendedPlaces></RecommendedPlaces>
       <SponsoredPlaces></SponsoredPlaces>
+      <Contactus></Contactus>
     </div>
   );
 };

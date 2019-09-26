@@ -31,7 +31,7 @@ const SponsoredPlaces = () => {
         autoPlaySpeed={3000}
         transitionDuration={500}
         infinite
-        itemClass="sponsored-places__slide"
+        itemClass="sponsored-places__slide-item"
         responsive={responsive}
       >
         {[1, 2, 3, 4].map(i => (

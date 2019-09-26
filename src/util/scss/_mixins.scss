@@ -69,6 +69,7 @@
     padding: 1rem 2.5rem;
     border-radius: 4rem;
     font-size: 1.6rem;
+    min-width: 15rem;
     display: inline-block;
     transition: all 0.2s;
 
@@ -95,6 +96,10 @@
     color: white;
     background-color: var(--orange);
   }
+  &--secondary {
+    color: var(--blue);
+    background-color: white;
+  }
 }
 
 .btn-text {
@@ -110,6 +115,7 @@
     display: inline-block;
     padding: 3px;
     cursor: pointer;
+    min-width: 15rem;
   }
 
   &:hover {
