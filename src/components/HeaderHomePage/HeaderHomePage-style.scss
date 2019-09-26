@@ -35,6 +35,11 @@
   & h2 {
     color: white;
     margin-bottom: 4rem;
+    @include respond(phone) {
+      max-width: 80%;
+      margin: auto;
+      margin-bottom: 4rem;
+    }
   }
 }
 

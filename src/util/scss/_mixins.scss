@@ -2,6 +2,11 @@
 //1em = 16px
 
 @mixin respond($breakpoint) {
+  @if ($breakpoint == small-phone) {
+    @media (max-width: 27em) {
+      @content;
+    }
+  }
   @if ($breakpoint == phone) {
     @media (max-width: 37.5em) {
       @content;
@@ -17,8 +22,18 @@
       @content;
     }
   }
+  @if ($breakpoint == meduim-desktop) {
+    @media (max-width: 65em) {
+      @content;
+    }
+  }
   @if ($breakpoint == big-desktop) {
-    @media (min-width: 112.5em) {
+    @media (min-width: 93em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == big-big-desktop) {
+    @media (min-width: 124em) {
       @content;
     }
   }
@@ -62,12 +77,14 @@
     @include respond(phone) {
       font-size: 4rem;
     }
-    font-weight: 400;
+    font-weight: 300;
+    @include respond(phone) {
+      font-weight: 400;
+    }
     letter-spacing: 2.2rem;
   }
   &--secondary {
     font-size: 2rem;
-
     font-weight: 300;
     letter-spacing: 0.15rem;
   }

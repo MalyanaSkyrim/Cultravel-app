@@ -2,7 +2,13 @@
 
 .contactus {
   position: relative;
-  height: calc(100vh + 10rem);
+  height: calc(90vh + 10rem);
+  min-height: 460px;
+
+  @include respond(meduim-desktop) {
+    height: calc(70vh + 10rem);
+  }
+
   @include respond(tab-port) {
     height: calc(80vh + 10rem);
   }
@@ -17,7 +23,11 @@
   overflow: hidden;
   margin: auto;
   &__container {
-    height: calc(100vh + 30rem);
+    height: calc(90vh + 30rem);
+    min-height: 560px;
+    @include respond(meduim-desktop) {
+      height: calc(70vh + 30rem);
+    }
     @include respond(tab-port) {
       height: calc(80vh + 30rem);
     }

@@ -16,15 +16,27 @@
 }
 
 html {
+  @include respond(big-desktop) {
+    font-size: 65.5%; //1rem = 10px;
+  }
+  @include respond(big-big-desktop) {
+    font-size: 72%;
+  }
   font-size: 62.5%; //1rem = 10px;
   @include respond(tab-port) {
     font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+  @include respond(small-phone) {
+    font-size: 35%;
   }
 }
 
 header {
   height: 100vh;
-  @include respond(phone) {
+  @include respond(meduim-desktop) {
     height: 70vh;
   }
 }
@@ -41,6 +53,11 @@ body {
   clip-path: polygon(50% 14rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
   margin-top: -15rem;
   padding-top: 10rem;
+  @include respond(meduim-desktop) {
+    clip-path: polygon(50% 20rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
+    margin-top: -21rem;
+    padding-top: 20rem;
+  }
   @include respond(tab-port) {
     clip-path: polygon(50% 24rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
     margin-top: -25rem;

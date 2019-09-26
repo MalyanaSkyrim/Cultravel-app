@@ -29,6 +29,10 @@
 
   &__slide {
     height: 90vh;
+
+    @include respond(meduim-desktop) {
+      height: 40vh;
+    }
     @include respond(phone) {
       height: 56vh;
     }
