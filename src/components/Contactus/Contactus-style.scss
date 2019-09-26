@@ -3,6 +3,9 @@
 .contactus {
   position: relative;
   height: calc(100vh + 10rem);
+  @include respond(tab-port) {
+    height: calc(80vh + 10rem);
+  }
   transform: skewY(-10deg);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -10,6 +13,9 @@
   &__container {
     transform: skewY(10deg);
     height: calc(100vh + 30rem);
+    @include respond(tab-port) {
+      height: calc(80vh + 30rem);
+    }
     top: -10rem;
     background-image: url("../../assets/images/chefchaouen-morocco.jpg");
     background-size: cover;

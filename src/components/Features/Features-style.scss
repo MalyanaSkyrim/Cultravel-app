@@ -1,8 +1,13 @@
+@import "../../util/scss/mixins";
 .features {
   padding: 15rem 0;
   &__row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @include respond(tab-port) {
+      justify-content: space-around;
+    }
   }
 }
 .feature-box {
@@ -13,6 +18,8 @@
   box-shadow: 0 0 4rem 1rem rgba(black, 0.12);
   transition: all 0.15s;
   text-align: center;
+  margin: 2rem 0;
+  min-width: 200px;
   &__icon {
     font-size: 5rem;
     margin: 2rem 0;

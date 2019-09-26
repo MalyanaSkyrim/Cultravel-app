@@ -7,18 +7,19 @@
 }
 
 :root {
-  //our font, distance, and font : varaiables.
-  // --page-padding: 3rem;
-
   --gray: #333333;
   --orange: #ff7500;
   --light-orange: #ff8f2e5d;
   --dark-orange: #e86c005d;
   --blue: #396ecf;
+  --darg-gray: #151515;
 }
 
 html {
   font-size: 62.5%; //1rem = 10px;
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
 }
 
 header {
@@ -31,4 +32,15 @@ body {
   line-height: 1.7;
   box-sizing: border-box;
   color: var(--gray);
+}
+.content {
+  background-color: white;
+  clip-path: polygon(50% 14rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
+  margin-top: -15rem;
+  padding-top: 10rem;
+  @include respond(tab-port) {
+    clip-path: polygon(50% 24rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
+    margin-top: -25rem;
+    padding-top: 20rem;
+  }
 }
