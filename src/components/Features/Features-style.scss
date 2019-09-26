@@ -1,6 +1,9 @@
 @import "../../util/scss/mixins";
 .features {
   padding: 15rem 0;
+  @include respond(phone) {
+    padding: 10rem 0;
+  }
   &__row {
     display: flex;
     flex-wrap: wrap;

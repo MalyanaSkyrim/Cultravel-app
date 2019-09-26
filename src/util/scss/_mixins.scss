@@ -24,6 +24,22 @@
   }
 }
 
+@mixin transition {
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--color);
+    bottom: 0;
+    width: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 80%;
+  }
+}
+
 @mixin gradientImage($image, $from-color, $to-color) {
   background-image: linear-gradient(to right bottom, $from-color, $to-color),
     url($image);
@@ -43,7 +59,10 @@
   text-transform: uppercase;
   &--primary {
     font-size: 7rem;
-    font-weight: 300;
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+    font-weight: 400;
     letter-spacing: 2.2rem;
   }
   &--secondary {

@@ -8,6 +8,9 @@
     text-align: left;
     padding-left: 2rem;
     width: 50%;
+    @include respond(phone) {
+      width: 95%;
+    }
     position: absolute;
     bottom: 4rem;
 
@@ -26,6 +29,9 @@
 
   &__slide {
     height: 90vh;
+    @include respond(phone) {
+      height: 56vh;
+    }
     background-size: cover;
     background-position: center;
     &--1 {

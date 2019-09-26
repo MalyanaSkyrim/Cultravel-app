@@ -6,15 +6,23 @@
   @include respond(tab-port) {
     height: calc(80vh + 10rem);
   }
+  @include respond(phone) {
+    height: calc(60vh + 10rem);
+  }
   transform: skewY(-10deg);
+  & > * {
+    transform: skewY(10deg);
+  }
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin: auto;
   &__container {
-    transform: skewY(10deg);
     height: calc(100vh + 30rem);
     @include respond(tab-port) {
       height: calc(80vh + 30rem);
+    }
+    @include respond(phone) {
+      height: calc(60vh + 30rem);
     }
     top: -10rem;
     background-image: url("../../assets/images/chefchaouen-morocco.jpg");
@@ -27,6 +35,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 6rem 3rem;
     width: 60%;
+    @include respond(phone) {
+      width: 90%;
+    }
     max-width: 50rem;
     font-size: 2rem;
     border-radius: 0.8rem;

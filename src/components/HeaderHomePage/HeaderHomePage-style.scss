@@ -27,6 +27,9 @@
 
 .heading {
   width: 60%;
+  @include respond(tab-port) {
+    width: 90%;
+  }
   @include centerElement;
   text-align: center;
   & h2 {
