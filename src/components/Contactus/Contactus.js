@@ -1,5 +1,9 @@
 import React from "react";
 import "./Contactus-style.scss";
+import Button from "../../kit/CustomForm/Button/Button";
+import Input from "../../kit/CustomForm/Input/Input";
+import TextArea from "../../kit/CustomForm/TextArea/TextArea";
+import Form from "../../kit/CustomForm/Form/Form";
 
 const Contactus = () => {
   return (
@@ -7,37 +11,12 @@ const Contactus = () => {
       <div className="contactus__container">
         <div className="contactus__form-links">
           <div className="contactus__form">
-            <form className="form">
-              <div className="form__group">
-                <input
-                  required
-                  className="form__input"
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Enter your username :"
-                ></input>
-                <label className="form__label">Username :</label>
-              </div>
-              <div className="form__group">
-                <input
-                  required
-                  className="form__input"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email :"
-                ></input>
-                <label className="form__label">E-mail : </label>
-              </div>
-              <div className="form__group">
-                <label className="form__label">Text us : </label>
-                <textarea className="form__textarea"></textarea>
-              </div>
-              <div className="form__group">
-                <button className="btn btn--secondary">Send</button>
-              </div>
-            </form>
+            <Form>
+              <Input id="username" label="Username : " required></Input>
+              <Input id="email" type="email" label="Email : " required></Input>
+              <TextArea label="Text us :"></TextArea>
+              <Button type="secondary">Send</Button>
+            </Form>
           </div>
           <div className="contactus__social-links"></div>
         </div>

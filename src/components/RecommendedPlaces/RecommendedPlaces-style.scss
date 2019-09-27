@@ -19,8 +19,7 @@
     }
   }
   &__read-more {
-    color: var(--orange);
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   &__descp {
     font-size: 1.8rem;
@@ -31,7 +30,7 @@
     height: 90vh;
 
     @include respond(meduim-screen) {
-      height: 56vh;
+      height: 45vh;
     }
     @include respond(phone) {
       height: 40vh;

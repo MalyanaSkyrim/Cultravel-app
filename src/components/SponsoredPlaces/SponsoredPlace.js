@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../kit/CustomForm/Button/Button";
 
 const SponsoredPlace = ({ index }) => {
   return (
@@ -28,9 +29,9 @@ const SponsoredPlace = ({ index }) => {
         </div>
 
         <div className="sponsored-places__book">
-          <a href="#" className="btn btn--primary">
-            Book now
-          </a>
+          <Button type="primary">
+            <a href="#">Book now</a>
+          </Button>
         </div>
         <span className="sponsored-places__tag">sponsored</span>
       </div>

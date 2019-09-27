@@ -9,15 +9,26 @@ import PageItem from "../kit/PageItem/PageItemContainer";
 import AboutUs from "../components/AboutUs/AboutUsContainer";
 import NotFound from "../components/NotFound/NotFoundContainer";
 import ContentAttractionsPageContainer from "../components/ContentAttractionsPage/ContentAttractionsPageContainer";
+import SignInForm from "../components/SignInForm/SignInFormContainer";
+import SignUpForm from "../components/SignUpForm/SignUpFormContainer";
 
 const ContentRouter = () => {
   return (
     <Switch>
-      <Route exact path="/" component={ContentHomePage} />
       <Route exact path="/about" component={AboutUs} />
       <Route path="/not-found" component={NotFound}></Route>
+      <AccountRoutes></AccountRoutes>
       <CityRoutes></CityRoutes>
     </Switch>
+  );
+};
+
+const AccountRoutes = () => {
+  return (
+    <>
+      <Route path="/signin" to={SignInForm}></Route>
+      <Route path="/signup" to={SignUpForm}></Route>
+    </>
   );
 };
 
@@ -28,7 +39,7 @@ const CityRoutes = () => {
       <HotelsRoutes></HotelsRoutes>
       <FoodDrinkRoutes></FoodDrinkRoutes>
       <AttractionsRoutes></AttractionsRoutes>
-      {/* <Redirect to="/not-found"></Redirect> */}
+      <Redirect to="/not-found"></Redirect>
     </>
   );
 };

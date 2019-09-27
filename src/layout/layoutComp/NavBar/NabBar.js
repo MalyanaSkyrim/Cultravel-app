@@ -6,20 +6,22 @@ const NavBar = props => {
   let [current, setCurrent] = useState("test");
   let [scrollY, setScrollY] = useState(0);
 
-  const handleClick = e => {
-    console.log("click ", e);
-    setCurrent(e.key);
+  const handleScroll = () => {
+    setScrollY(window.pageYOffset);
   };
 
   useEffect(() => {
     if (props.location.pathname == "/") setCurrent("home");
-    else setCurrent(props.location.pathname);
-
-    window.addEventListener("scroll", () => {
-      setScrollY(window.pageYOffset);
-    });
+    else setCurrent(props.location.pathname.substring(1));
 
     return () => {};
+  }, [props.location.pathname]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   let menuContainerStyle =
@@ -37,20 +39,44 @@ const NavBar = props => {
   return (
     <div className="menu__container" style={menuContainerStyle}>
       <div className="menu">
-        <div key="home" className="menu__item active">
-          Logo
-        </div>
+        <Link to="/">
+          <div
+            key="home"
+            className={`menu__item ${current == "home" ? "active" : ""}`}
+          >
+            <a>Logo</a>
+          </div>
+        </Link>
         <ul className="menu__right-side">
-          <li key="about" className="menu__item">
-            About
-          </li>
+          <Link to="/about">
+            <li
+              key="about"
+              className={`menu__item ${current == "about" ? "active" : ""}`}
+            >
+              <a>About</a>
+            </li>
+          </Link>
 
-          <li key="signin" className="menu__item">
-            <a>Sign in</a>
-          </li>
-          <li key="signup" className="menu__item">
-            <a>Sign up</a>
-          </li>
+          <Link to="/signin">
+            <a>
+              <li
+                key="signin"
+                className={`menu__item ${current == "signin" ? "active" : ""}`}
+              >
+                Sign in
+              </li>
+            </a>
+          </Link>
+          <Link to="signup">
+            <a>
+              <li
+                key="signup"
+                className={`menu__item ${current == "signup" ? "active" : ""}`}
+              >
+                Sign up
+              </li>
+            </a>
+          </Link>
         </ul>
       </div>
     </div>
