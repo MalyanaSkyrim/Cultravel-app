@@ -24,17 +24,20 @@ const NavBar = props => {
     };
   }, []);
 
+  let primaryStyle = {
+    "--color": "var(--gray)",
+    backgroundColor: "white",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.20)",
+    borderBottom: "1px solid rgba(171, 171, 171, 0.5)"
+  };
   let menuContainerStyle =
-    scrollY > 0 && scrollY < (2 * window.innerHeight) / 3
-      ? { opacity: 0 }
-      : scrollY >= (2 * window.innerHeight) / 3
-      ? {
-          "--color": "var(--gray)",
-          backgroundColor: "white",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.20)",
-          borderBottom: "1px solid rgba(171, 171, 171, 0.5)"
-        }
-      : {};
+    current == "home"
+      ? scrollY > 0 && scrollY < (2 * window.innerHeight) / 3
+        ? { opacity: 0 }
+        : scrollY >= (2 * window.innerHeight) / 3
+        ? primaryStyle
+        : {}
+      : primaryStyle;
 
   return (
     <div className="menu__container" style={menuContainerStyle}>
