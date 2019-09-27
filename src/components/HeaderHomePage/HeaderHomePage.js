@@ -15,7 +15,7 @@ const HeaderHomePage = () => {
       </div>
       <div className="heading">
         <h1 className="heading--primary">Cultravel</h1>
-        <h2 className="heading--secondary">
+        <h2 className="heading--sub">
           discover moroccan traditions and cultures
         </h2>
 

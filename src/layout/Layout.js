@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         <Route exact path="/" component={ContentHomePage} />
         <div className="content">{children}</div>
       </Switch>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

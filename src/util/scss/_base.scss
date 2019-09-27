@@ -54,10 +54,6 @@ body {
 }
 .content {
   background-color: white;
-  padding: 15rem 5%;
-  @include respond(meduim-screen) {
-    padding: 10rem 5%;
-  }
 }
 
 .row {

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Form-style.scss";
 
-const Form = ({ children }) => {
-  return <form className="form">{children}</form>;
+const Form = ({ itemClass, children }) => {
+  return <form className={"form " + itemClass}>{children}</form>;
 };
 
 export default Form;

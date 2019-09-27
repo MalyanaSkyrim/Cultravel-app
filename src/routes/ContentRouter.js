@@ -26,8 +26,8 @@ const ContentRouter = () => {
 const AccountRoutes = () => {
   return (
     <>
-      <Route path="/signin" to={SignInForm}></Route>
-      <Route path="/signup" to={SignUpForm}></Route>
+      <Route exact path="/signin" component={SignInForm}></Route>
+      <Route exact path="/signup" component={SignUpForm}></Route>
     </>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Button-style.scss";
 
-const Button = ({ type, itemClass, containerClass, children }) => {
+const Button = ({ type = "primary", itemClass, containerClass, children }) => {
   //types : ---------------
-  //primary
+  //primary : default
   //secondary
   //link
 
