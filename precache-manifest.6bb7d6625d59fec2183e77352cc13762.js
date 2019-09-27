@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f413421fc4b9598ef4a7af59b1352f56",
+    "revision": "a3fa502f879bfc1867d406b779d5cf28",
     "url": "/Cultravel-app/index.html"
   },
   {
-    "revision": "c11958d26815fb7ff807",
+    "revision": "5e598f0ec9d16f3e78fd",
     "url": "/Cultravel-app/static/css/2.04567b93.chunk.css"
   },
   {
-    "revision": "393b506be2768c31290e",
-    "url": "/Cultravel-app/static/css/main.3d83361e.chunk.css"
+    "revision": "fe066b231627007ba56f",
+    "url": "/Cultravel-app/static/css/main.5f2a08f0.chunk.css"
   },
   {
-    "revision": "c11958d26815fb7ff807",
-    "url": "/Cultravel-app/static/js/2.8abfd894.chunk.js"
+    "revision": "5e598f0ec9d16f3e78fd",
+    "url": "/Cultravel-app/static/js/2.cdf0541d.chunk.js"
   },
   {
-    "revision": "393b506be2768c31290e",
-    "url": "/Cultravel-app/static/js/main.f8727177.chunk.js"
+    "revision": "fe066b231627007ba56f",
+    "url": "/Cultravel-app/static/js/main.36a12ef9.chunk.js"
   },
   {
     "revision": "45d3c8340ee40659fbeb",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cultravel-app/static/media/card_hotels_003.a0739ecd.jpg"
   },
   {
+    "revision": "08a60111310c40baa0b6765fb358bcbf",
+    "url": "/Cultravel-app/static/media/chefchaouen-morocco.08a60111.jpg"
+  },
+  {
     "revision": "c55e8a8e6f79467c0302ac2b2c46bd7b",
     "url": "/Cultravel-app/static/media/morocco-ouarzazate.c55e8a8e.jpg"
   },
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "/Cultravel-app/static/media/revicons.2feb69cc.eot"
+  },
+  {
+    "revision": "7cb3cf4829ddf0baa2a451c0290dbb3e",
+    "url": "/Cultravel-app/static/media/sahara_morocco.7cb3cf48.jpg"
   },
   {
     "revision": "a9984713a8a6af7ef86d782d24e4de64",
