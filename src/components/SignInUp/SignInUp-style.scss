@@ -1,0 +1,83 @@
+@import "../../util/scss/mixins";
+.sign-in-up {
+  height: calc(100vh - 6rem);
+  position: relative;
+  margin-top: 6rem;
+  background-image: url("../../assets/images/sahara_morocco.jpg");
+  background-position: bottom;
+  background-size: cover;
+  &__list {
+    background-color: rgba(0, 0, 0, 0.05);
+    & > ul {
+      display: inline-block;
+
+      background-color: white;
+      list-style: none;
+    }
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    &:not(.active) {
+      background-color: rgba(0, 0, 0, 0.05);
+
+      &:first-child {
+        border-bottom-right-radius: 20px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 20px;
+      }
+    }
+
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--orange);
+    padding: 2rem 3rem;
+  }
+  &__container {
+    @include centerElement;
+    width: 60%;
+    height: 60rem;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  &__tabs {
+    overflow: hidden;
+    position: relative;
+    height: 50rem;
+    border-top-left-radius: 0;
+  }
+  &__form {
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+    top: 0;
+    @include centerElement;
+    padding: 3rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    &:not(.active) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__input {
+    background-color: rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
+  }
+
+  &__title {
+    margin-bottom: 15%;
+  }
+  &__icon {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    right: 0;
+    height: auto;
+    fill-opacity: 0.15;
+    transform: translate(30%, -30%) rotate(25deg);
+  }
+}

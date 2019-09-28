@@ -9,26 +9,16 @@ import PageItem from "../kit/PageItem/PageItemContainer";
 import AboutUs from "../components/AboutUs/AboutUsContainer";
 import NotFound from "../components/NotFound/NotFoundContainer";
 import ContentAttractionsPageContainer from "../components/ContentAttractionsPage/ContentAttractionsPageContainer";
-import SignInForm from "../components/SignInForm/SignInFormContainer";
-import SignUpForm from "../components/SignUpForm/SignUpFormContainer";
+import SignInUp from "../components/SignInUp/SignInUpContainer";
 
 const ContentRouter = () => {
   return (
     <Switch>
       <Route exact path="/about" component={AboutUs} />
       <Route path="/not-found" component={NotFound}></Route>
-      <AccountRoutes></AccountRoutes>
+      <Route path="/sign" component={SignInUp} />
       <CityRoutes></CityRoutes>
     </Switch>
-  );
-};
-
-const AccountRoutes = () => {
-  return (
-    <>
-      <Route exact path="/signin" component={SignInForm}></Route>
-      <Route exact path="/signup" component={SignUpForm}></Route>
-    </>
   );
 };
 

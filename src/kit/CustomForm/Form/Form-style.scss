@@ -15,22 +15,24 @@
     font: inherit;
     padding: 1rem;
     border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.15);
   }
   &__label {
     padding: 1.5rem 2rem;
     display: block;
-
+    font-family: inherit;
+    font-size: 1.6rem;
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.3s;
-    color: white;
+    color: var(--light-gray);
     transform: translateY(-5rem);
   }
 
   &__input {
     width: 90%;
-
+    background-color: rgba(0, 0, 0, 0.15);
     font: inherit; //input elements doesn't inherit the font-family from the parents.
     color: inherit;
     padding: 1.5rem 2rem;
@@ -42,7 +44,7 @@
     transition: all 0.3s;
 
     &::placeholder {
-      color: rgb(114, 114, 114);
+      color: var(--light-gray);
     }
     &:focus {
       border-bottom: 2px solid var(--blue);

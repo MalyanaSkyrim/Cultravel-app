@@ -47,7 +47,7 @@ const NavBar = props => {
             key="home"
             className={`menu__item ${current == "home" ? "active" : ""}`}
           >
-            <a>Logo</a>
+            Logo
           </div>
         </Link>
         <ul className="menu__right-side">
@@ -56,29 +56,17 @@ const NavBar = props => {
               key="about"
               className={`menu__item ${current == "about" ? "active" : ""}`}
             >
-              <a>About</a>
+              About
             </li>
           </Link>
 
-          <Link to="/signin">
-            <a>
-              <li
-                key="signin"
-                className={`menu__item ${current == "signin" ? "active" : ""}`}
-              >
-                Sign in
-              </li>
-            </a>
-          </Link>
-          <Link to="signup">
-            <a>
-              <li
-                key="signup"
-                className={`menu__item ${current == "signup" ? "active" : ""}`}
-              >
-                Sign up
-              </li>
-            </a>
+          <Link to="/sign">
+            <li
+              key="sign"
+              className={`menu__item ${current == "sign" ? "active" : ""}`}
+            >
+              Account
+            </li>
           </Link>
         </ul>
       </div>
