@@ -1,16 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./RecommendedPlaces-style.scss";
 import RecommendedPlace from "./RecommendedPlace";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const RecommendedPlaces = ({ data }) => {
   return (
     <div className="row">
-      <h2 className="heading--secondary recommended-places__title">
-        Popular Cities
-      </h2>
-      <div className="recommended-places">
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
+        <h2 className="heading--secondary recommended-places__title">
+          Popular Cities
+        </h2>
+      </ScrollAnimation>
+      <ScrollAnimation
+        className="recommended-places"
+        animateIn="fadeIn"
+        duration={3}
+      >
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -26,7 +33,7 @@ const RecommendedPlaces = ({ data }) => {
             ></RecommendedPlace>
           ))}
         </Carousel>
-      </div>
+      </ScrollAnimation>
     </div>
   );
 };

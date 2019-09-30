@@ -1,46 +1,23 @@
 import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import "./Features-style.scss";
+import Feature from "./Feature";
 
-const Features = () => {
+const Features = ({ featuresData }) => {
   return (
     <div className="features row">
-      <h2 className="features__title heading--secondary"> features</h2>
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
+        <h2 className="features__title heading--secondary"> features</h2>
+      </ScrollAnimation>
       <div className="features__row">
-        <div className="feature-box ">
-          <i className="feature-box__icon fas fa-globe-americas"></i>
-          <h3 className="heading--tertiary ">Explore the world</h3>
-          <p className="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem sint unde, rem cumque minima alias quo repudiandae.
-          </p>
-        </div>
-
-        <div className="feature-box ">
-          <i className="feature-box__icon far fa-compass"></i>
-          <h3 className="heading--tertiary ">Meet nature</h3>
-          <p className="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem sint unde, rem cumque minima alias quo repudiandae.
-          </p>
-        </div>
-
-        <div className="feature-box ">
-          <i className="feature-box__icon fas fa-map-signs"></i>
-          <h3 className="heading--tertiary ">Find your way</h3>
-          <p className="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem sint unde, rem cumque minima alias quo repudiandae.
-          </p>
-        </div>
-
-        <div className="feature-box ">
-          <i className="feature-box__icon far fa-heart"></i>
-          <h3 className="heading--tertiary ">Live a healthier life</h3>
-          <p className="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem sint unde, rem cumque minima alias quo repudiandae.
-          </p>
-        </div>
+        {featuresData.map((feature, i) => (
+          <ScrollAnimation
+            className="feature-box"
+            animateIn={i < 2 ? `bounceInLeft` : `bounceInRight`}
+          >
+            <Feature feature={feature}></Feature>;
+          </ScrollAnimation>
+        ))}
       </div>
     </div>
   );

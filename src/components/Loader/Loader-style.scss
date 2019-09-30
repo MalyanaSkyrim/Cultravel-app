@@ -1,0 +1,35 @@
+@import "../../util/scss/mixins";
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  &__container {
+    @include centerElement;
+    display: inline-block;
+    width: 20%;
+  }
+  &__icon {
+    width: 100%;
+    fill: var(--orange);
+    animation: rotate 1s ease-in-out infinite;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0) scale(0.7);
+  }
+
+  50% {
+    transform: rotate(90deg) scale(1);
+    fill: var(--blue);
+  }
+
+  100% {
+    transform: rotate(180deg) scale(0.7);
+  }
+}

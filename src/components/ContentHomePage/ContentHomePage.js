@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContentHomePage-style.scss";
 import Features from "../Features/FeaturesContainer";
 import RecommendedPlaces from "../RecommendedPlaces/RecommendedPlacesContainer";
 import SponsoredPlaces from "../SponsoredPlaces/SponsoredPlacesContainer";
 import Contactus from "../Contactus/ContactusContainer";
-import AboutMorocco from "../AboutMorocco/AboutMorocco";
-import Testimonials from "../Testimonials/Testimonials";
+import AboutMorocco from "../AboutMorocco/AboutMoroccoContainer";
+import Testimonials from "../Testimonials/TestimonialsContainer";
+import Loader from "../Loader/LoaderContainer";
 
 const ContentHomePage = () => {
   return (

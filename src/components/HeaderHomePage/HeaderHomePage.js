@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./HeaderHomePage-style.scss";
 import Selector from "../../kit/Selector/Selector";
 

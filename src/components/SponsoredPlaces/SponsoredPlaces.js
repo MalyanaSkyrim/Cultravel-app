@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
+import ScrollAnimation from "react-animate-on-scroll";
 import "react-multi-carousel/lib/styles.css";
 import "./SponsoredPlaces-style.scss";
 import SponsoredPlace from "./SponsoredPlace";
-
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -35,7 +35,9 @@ const SponsoredPlaces = () => {
         responsive={responsive}
       >
         {[1, 2, 3, 4].map(i => (
-          <SponsoredPlace key={i} index={i}></SponsoredPlace>
+          <ScrollAnimation animateIn="fadeIn" duration={3}>
+            <SponsoredPlace key={i} index={i}></SponsoredPlace>
+          </ScrollAnimation>
         ))}
       </Carousel>
     </div>
