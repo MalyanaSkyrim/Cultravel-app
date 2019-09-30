@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Cultravel-app/static/css/main.5f2a08f0.chunk.css",
-    "main.js": "/Cultravel-app/static/js/main.36a12ef9.chunk.js",
-    "main.js.map": "/Cultravel-app/static/js/main.36a12ef9.chunk.js.map",
+    "main.css": "/Cultravel-app/static/css/main.a10570ea.chunk.css",
+    "main.js": "/Cultravel-app/static/js/main.3f9c19b2.chunk.js",
+    "main.js.map": "/Cultravel-app/static/js/main.3f9c19b2.chunk.js.map",
     "runtime~main.js": "/Cultravel-app/static/js/runtime~main.0f9792e4.js",
     "runtime~main.js.map": "/Cultravel-app/static/js/runtime~main.0f9792e4.js.map",
     "static/css/2.04567b93.chunk.css": "/Cultravel-app/static/css/2.04567b93.chunk.css",
-    "static/js/2.cdf0541d.chunk.js": "/Cultravel-app/static/js/2.cdf0541d.chunk.js",
-    "static/js/2.cdf0541d.chunk.js.map": "/Cultravel-app/static/js/2.cdf0541d.chunk.js.map",
+    "static/js/2.4e89849a.chunk.js": "/Cultravel-app/static/js/2.4e89849a.chunk.js",
+    "static/js/2.4e89849a.chunk.js.map": "/Cultravel-app/static/js/2.4e89849a.chunk.js.map",
     "index.html": "/Cultravel-app/index.html",
-    "precache-manifest.6bb7d6625d59fec2183e77352cc13762.js": "/Cultravel-app/precache-manifest.6bb7d6625d59fec2183e77352cc13762.js",
+    "precache-manifest.5dc42b563a5be43b4d0744ef98d10cae.js": "/Cultravel-app/precache-manifest.5dc42b563a5be43b4d0744ef98d10cae.js",
     "service-worker.js": "/Cultravel-app/service-worker.js",
     "static/css/2.04567b93.chunk.css.map": "/Cultravel-app/static/css/2.04567b93.chunk.css.map",
-    "static/css/main.5f2a08f0.chunk.css.map": "/Cultravel-app/static/css/main.5f2a08f0.chunk.css.map",
+    "static/css/main.a10570ea.chunk.css.map": "/Cultravel-app/static/css/main.a10570ea.chunk.css.map",
     "static/media/SponsoredPlaces-style.scss": "/Cultravel-app/static/media/card_hotels_003.a0739ecd.jpg",
     "static/media/Contactus-style.scss": "/Cultravel-app/static/media/chefchaouen-morocco.08a60111.jpg",
     "static/media/RecommendedPlaces-style.scss": "/Cultravel-app/static/media/test-bg.03574501.jpg",
     "static/media/styles.css": "/Cultravel-app/static/media/revicons.2feb69cc.eot",
-    "static/media/SignUpForm-style.scss": "/Cultravel-app/static/media/sahara_morocco.7cb3cf48.jpg"
+    "static/media/SignInUp-style.scss": "/Cultravel-app/static/media/sahara_morocco.7cb3cf48.jpg"
   }
 }
