@@ -3,14 +3,14 @@
 .homepage {
   &__content {
     background-color: white;
-    clip-path: polygon(50% 15rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
-    margin-top: -16rem;
-    padding: 15rem 5%;
+    clip-path: polygon(50% 20rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
+    margin-top: -21rem;
+    padding: 20rem 5%;
 
     @include respond(meduim-screen) {
-      clip-path: polygon(50% 20rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
-      padding: 10rem 5%;
-      margin-top: -21rem;
+      clip-path: polygon(50% 24rem, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 3%);
+      padding: 24rem 5%;
+      margin-top: -25rem;
     }
   }
 }

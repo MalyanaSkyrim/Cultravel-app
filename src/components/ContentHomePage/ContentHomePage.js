@@ -5,6 +5,7 @@ import RecommendedPlaces from "../RecommendedPlaces/RecommendedPlacesContainer";
 import SponsoredPlaces from "../SponsoredPlaces/SponsoredPlacesContainer";
 import Contactus from "../Contactus/ContactusContainer";
 import AboutMorocco from "../AboutMorocco/AboutMorocco";
+import Testimonials from "../Testimonials/Testimonials";
 
 const ContentHomePage = () => {
   return (
@@ -14,6 +15,7 @@ const ContentHomePage = () => {
         <AboutMorocco></AboutMorocco>
         <RecommendedPlaces></RecommendedPlaces>
         <SponsoredPlaces></SponsoredPlaces>
+        <Testimonials></Testimonials>
         <Contactus></Contactus>
       </div>
     </div>
