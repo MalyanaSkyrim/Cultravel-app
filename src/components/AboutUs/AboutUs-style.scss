@@ -1,7 +1,11 @@
 @import "../../util/scss/mixins";
 .aboutus {
   &__header {
+<<<<<<< HEAD
     height: 60vh;
+=======
+    height: 70vh;
+>>>>>>> bb6c1a7... add about page
     position: relative;
     background-image: linear-gradient(
         45deg,
@@ -28,7 +32,10 @@
   }
   & &__sub-title {
     color: var(--blue);
+<<<<<<< HEAD
     font-size: 3rem;
+=======
+>>>>>>> bb6c1a7... add about page
     margin-bottom: 4rem;
     &--mission {
       text-align: center;
@@ -38,30 +45,39 @@
     font-size: 2rem;
     &--story {
       width: 35%;
+<<<<<<< HEAD
       margin-left: 20px;
       @include respond(tab-land) {
         width: 100%;
         margin: 0;
         margin-top: 4rem;
       }
+=======
+>>>>>>> bb6c1a7... add about page
     }
   }
   &__video {
     width: 60%;
     max-width: 70rem;
     height: 50rem;
+<<<<<<< HEAD
     @include respond(tab-land) {
       width: 100%;
       max-width: unset;
     }
+=======
+>>>>>>> bb6c1a7... add about page
   }
   &__story {
     &-content {
       display: flex;
       justify-content: space-evenly;
+<<<<<<< HEAD
       @include respond(tab-land) {
         flex-direction: column;
       }
+=======
+>>>>>>> bb6c1a7... add about page
     }
   }
   &__curve {
@@ -70,6 +86,7 @@
     bottom: 0;
     left: 0;
   }
+<<<<<<< HEAD
   &__icon {
     transform: rotate(10deg) translate(20%, 30%);
     width: auto;
@@ -79,4 +96,6 @@
     bottom: 0;
     fill-opacity: 0.3;
   }
+=======
+>>>>>>> bb6c1a7... add about page
 }
