@@ -5,15 +5,15 @@ import Button from "../../kit/CustomForm/Button/Button";
 const RecommendedPlace = ({ index, cityname, descrp }) => {
   return (
     <div
-      className={`recommended-palces__slide recommended-palces__slide--${index}`}
+      className={`recommended-places__slide recommended-places__slide--${index}`}
     >
       <img src=""></img>
-      <div className="recommended-palces__content">
+      <div className="recommended-places__content">
         <h3 className="heading--tertiary">{cityname}</h3>
-        <p className="recommended-palces__descp">{descrp}</p>
+        <p className="recommended-places__descp">{descrp}</p>
 
         <Link to="readmore">
-          <Button containerClass="recommended-palces__read-more" type="link">
+          <Button containerClass="recommended-places__read-more" type="link">
             Read more
           </Button>
         </Link>

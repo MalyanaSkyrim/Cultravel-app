@@ -38,7 +38,7 @@
   &__container {
     @include centerElement;
     width: 60%;
-    height: 60rem;
+    height: 67rem;
     max-width: 400px;
     background-color: white;
     border-radius: 8px;
@@ -46,7 +46,7 @@
   &__tabs {
     overflow: hidden;
     position: relative;
-    height: 50rem;
+    height: 63rem;
     border-top-left-radius: 0;
   }
   &__form {

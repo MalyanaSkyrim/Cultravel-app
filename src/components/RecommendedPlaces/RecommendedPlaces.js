@@ -6,22 +6,27 @@ import RecommendedPlace from "./RecommendedPlace";
 
 const RecommendedPlaces = ({ data }) => {
   return (
-    <div className="recommended-palces row">
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        autoPlay={true}
-        infiniteLoop={true}
-        interval={5000}
-      >
-        {data.map((item, index) => (
-          <RecommendedPlace
-            index={index + 1}
-            cityname={item.cityname}
-            descrp={item.descrp}
-          ></RecommendedPlace>
-        ))}
-      </Carousel>
+    <div className="row">
+      <h2 className="heading--secondary recommended-places__title">
+        Popular Cities
+      </h2>
+      <div className="recommended-places">
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          autoPlay={true}
+          infiniteLoop={true}
+          interval={5000}
+        >
+          {data.map((item, index) => (
+            <RecommendedPlace
+              index={index + 1}
+              cityname={item.cityname}
+              descrp={item.descrp}
+            ></RecommendedPlace>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };

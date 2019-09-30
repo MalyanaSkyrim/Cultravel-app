@@ -3,36 +3,66 @@ import Form from "../../kit/CustomForm/Form/Form";
 import Input from "../../kit/CustomForm/Input/Input";
 import Button from "../../kit/CustomForm/Button/Button";
 
-const SignUpForm = ({ itemClass }) => {
+const SignUpForm = ({
+  itemClass,
+  values,
+  errors,
+  touched,
+  handleChange,
+  handleBlur,
+  handleSubmit,
+  isSubmitting
+}) => {
   return (
-    <Form itemClass={itemClass}>
+    <Form itemClass={itemClass} onSubmit={handleSubmit}>
       <Input
         required
         itemClass="sign-in-up__input"
         id="username"
         label="Username"
-      ></Input>
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.username}
+      >
+        {errors.username && touched.username && errors.username}
+      </Input>
       <Input
         required
         itemClass="sign-in-up__input"
-        id="Email"
+        id="email"
         label="Email : "
-      ></Input>
+        type="email"
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.email}
+      >
+        {errors.email && touched.email && errors.email}
+      </Input>
       <Input
         required
         itemClass="sign-in-up__input"
         id="password"
         type="password"
         label="Password :"
-      ></Input>
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.password}
+      >
+        {errors.password && touched.password && errors.password}
+      </Input>
       <Input
         required
         itemClass="sign-in-up__input"
-        id="conf-password"
+        id="confPassword"
         type="password"
         label="Confirm password :"
-      ></Input>
-      <Button>Submit</Button>
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.confPassword}
+      >
+        {errors.confPassword && touched.confPassword && errors.confPassword}
+      </Input>
+      <Button disabled={isSubmitting}>Submit</Button>
     </Form>
   );
 };

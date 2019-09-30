@@ -1,9 +1,11 @@
 @import "../../util/scss/mixins";
-.recommended-palces {
+.recommended-places {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
-
+  &__title {
+    margin-bottom: 4rem;
+  }
   &__content {
     text-align: left;
     padding-left: 2rem;

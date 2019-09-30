@@ -4,6 +4,7 @@ import "./Features-style.scss";
 const Features = () => {
   return (
     <div className="features row">
+      <h2 className="features__title heading--secondary"> features</h2>
       <div className="features__row">
         <div className="feature-box ">
           <i className="feature-box__icon fas fa-globe-americas"></i>
