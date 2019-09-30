@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ded5cf1cd92bae141fd2275f04bc3afd",
+    "revision": "0ac62a46da491f0aaca36c602447a004",
     "url": "/Cultravel-app/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cultravel-app/static/css/2.04567b93.chunk.css"
   },
   {
-    "revision": "aaed3a8ba9cec84cb9f8",
-    "url": "/Cultravel-app/static/css/main.a10570ea.chunk.css"
+    "revision": "34822564dc1ea006e2e2",
+    "url": "/Cultravel-app/static/css/main.7150981f.chunk.css"
   },
   {
     "revision": "a1bf709fccc2009b5a69",
     "url": "/Cultravel-app/static/js/2.4e89849a.chunk.js"
   },
   {
-    "revision": "aaed3a8ba9cec84cb9f8",
-    "url": "/Cultravel-app/static/js/main.3f9c19b2.chunk.js"
+    "revision": "34822564dc1ea006e2e2",
+    "url": "/Cultravel-app/static/js/main.9ae7ec67.chunk.js"
   },
   {
     "revision": "45d3c8340ee40659fbeb",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "08a60111310c40baa0b6765fb358bcbf",
     "url": "/Cultravel-app/static/media/chefchaouen-morocco.08a60111.jpg"
+  },
+  {
+    "revision": "838d1f94273bdc37759b174185f2c333",
+    "url": "/Cultravel-app/static/media/desert.838d1f94.jpg"
   },
   {
     "revision": "c55e8a8e6f79467c0302ac2b2c46bd7b",
