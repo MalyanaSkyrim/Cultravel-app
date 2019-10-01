@@ -8,14 +8,14 @@ import ScrollAnimation from "react-animate-on-scroll";
 const RecommendedPlaces = ({ data }) => {
   return (
     <div className="row">
-      <ScrollAnimation animateIn="fadeIn" duration={3}>
+      <ScrollAnimation animateIn="fadeInUp" duration={2}>
         <h2 className="heading--secondary recommended-places__title">
           Popular Cities
         </h2>
       </ScrollAnimation>
       <ScrollAnimation
         className="recommended-places"
-        animateIn="fadeIn"
+        animateIn="fadeInUp"
         duration={3}
       >
         <Carousel

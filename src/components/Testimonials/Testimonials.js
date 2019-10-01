@@ -12,15 +12,18 @@ const Testimonials = ({ stories = [] }) => {
       {stories.map((story, index) => (
         <ScrollAnimation
           className="story__scroll"
-          animateIn={index % 2 == 0 ? "bounceInLeft" : "bounceInRight"}
+          animateIn={index % 2 == 0 ? "fadeInLeft" : "fadeInRight"}
+          duration={2}
         >
           <Story story={story}></Story>
         </ScrollAnimation>
       ))}
       <div className="story__readmore">
-        <Button type="link">
-          <a href="#"> Read all stories &rarr; </a>
-        </Button>
+        <ScrollAnimation animateIn="fadeInUp" duration={2}>
+          <Button type="link">
+            <a href="#"> Read all stories &rarr; </a>
+          </Button>
+        </ScrollAnimation>
       </div>
     </div>
   );
