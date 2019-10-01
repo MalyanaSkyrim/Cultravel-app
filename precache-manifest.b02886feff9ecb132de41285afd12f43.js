@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab960ab35d70fa12da7f6e15dd6b4532",
+    "revision": "ed9c3895ec18ad5168b025ffe721d1a5",
     "url": "/Cultravel-app/index.html"
   },
   {
-    "revision": "8cd2e78641d9c41359fb",
+    "revision": "5b8a057befbff3de96c5",
     "url": "/Cultravel-app/static/css/2.3adb8020.chunk.css"
   },
   {
-    "revision": "7270b8b87414609a8cb9",
-    "url": "/Cultravel-app/static/css/main.8ba5e6c1.chunk.css"
+    "revision": "1311e9cfc5e9388c50c1",
+    "url": "/Cultravel-app/static/css/main.16d6ef54.chunk.css"
   },
   {
-    "revision": "8cd2e78641d9c41359fb",
-    "url": "/Cultravel-app/static/js/2.96a0ca41.chunk.js"
+    "revision": "5b8a057befbff3de96c5",
+    "url": "/Cultravel-app/static/js/2.97575381.chunk.js"
   },
   {
-    "revision": "7270b8b87414609a8cb9",
-    "url": "/Cultravel-app/static/js/main.b3aa02ca.chunk.js"
+    "revision": "1311e9cfc5e9388c50c1",
+    "url": "/Cultravel-app/static/js/main.ef8c98e9.chunk.js"
   },
   {
     "revision": "45d3c8340ee40659fbeb",
