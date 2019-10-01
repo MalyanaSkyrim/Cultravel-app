@@ -11,7 +11,7 @@ const Contactus = () => {
     <div className="contactus">
       <ScrollAnimation animateIn="fadeInUp" duration={2}>
         <div className="contactus__container">
-          <ScrollAnimation animateIn="fadeInDown" duration={2}>
+          <ScrollAnimation animateIn="fadeInDown" duration={2} delay={1}>
             <div className="contactus__form-links">
               <h2 className="contactus__title heading--secondary">
                 Contact us{" "}
