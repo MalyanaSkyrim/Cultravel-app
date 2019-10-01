@@ -18,7 +18,6 @@ const AboutUs = () => {
             style={{ stroke: "none", fill: "#fff" }}
           ></path>
         </svg>
-<<<<<<< HEAD
         <svg
           className="aboutus__icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,8 +35,6 @@ const AboutUs = () => {
             />
           </g>{" "}
         </svg>
-=======
->>>>>>> bb6c1a7... add about page
       </div>
       <div className="content">
         <div className="aboutus__intro row">

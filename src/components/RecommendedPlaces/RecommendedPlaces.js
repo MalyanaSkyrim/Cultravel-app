@@ -8,12 +8,13 @@ import ScrollAnimation from "react-animate-on-scroll";
 const RecommendedPlaces = ({ data }) => {
   return (
     <div className="row">
-      <ScrollAnimation animateIn="fadeInUp" duration={2}>
+      <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
         <h2 className="heading--secondary recommended-places__title">
           Popular Cities
         </h2>
       </ScrollAnimation>
       <ScrollAnimation
+        animateOnce={true}
         className="recommended-places"
         animateIn="fadeInUp"
         duration={3}

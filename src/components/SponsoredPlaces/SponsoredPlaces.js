@@ -35,7 +35,7 @@ const SponsoredPlaces = () => {
         responsive={responsive}
       >
         {[1, 2, 3, 4].map(i => (
-          <ScrollAnimation animateIn="fadeInUp" duration={2}>
+          <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
             <SponsoredPlace key={i} index={i}></SponsoredPlace>
           </ScrollAnimation>
         ))}

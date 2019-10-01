@@ -2,8 +2,19 @@
   position: relative;
   color: var(--gray);
   font-size: 2rem;
-
-  & > div > div {
+  & &__button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    width: auto;
+    display: inline-block;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    &.city-selected {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   & input {
@@ -40,6 +51,9 @@
       border-bottom-right-radius: 8px;
     }
     &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    &.current {
       background-color: rgba(255, 255, 255, 0.7);
     }
   }

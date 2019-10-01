@@ -5,14 +5,18 @@ import "./AboutMorocco-style.scss";
 const AboutMorocco = () => {
   return (
     <div className="about-morocco row">
-      <ScrollAnimation animateIn="fadeInUp" duration={2}>
+      <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
         <h2 className="about-morocco__title heading--secondary">
           About Morocco
         </h2>
       </ScrollAnimation>
       <div className="about-morocco__content">
         <p className="about-morocco__descrp">
-          <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="fadeInLeft"
+            duration={2}
+          >
             Morocco (the full Arabic name is{" "}
             <strong>Al Mamlakah al Maghribiyah</strong> which translates into
             "The Western Kingdom" ) is located on the North West coast of Africa
@@ -28,6 +32,7 @@ const AboutMorocco = () => {
           </ScrollAnimation>
         </p>
         <ScrollAnimation
+          animateOnce={true}
           className="about-morocco__imgs"
           animateIn="fadeInRight"
           duration={2}

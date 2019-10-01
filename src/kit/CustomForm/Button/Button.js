@@ -12,14 +12,11 @@ const Button = ({
   //primary : default
   //secondary
   //link
-  console.log(disabled);
   return (
-    <div>
-      <div className={"form__group " + containerClass}>
-        <button className={`btn btn--${type} ${itemClass}`} disabled={disabled}>
-          {children}
-        </button>
-      </div>
+    <div className={"form__group " + containerClass}>
+      <button className={`btn btn--${type} ${itemClass}`} disabled={disabled}>
+        {children}
+      </button>
     </div>
   );
 };
