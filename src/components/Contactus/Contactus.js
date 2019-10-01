@@ -19,7 +19,7 @@ const Contactus = () => {
           >
             <div className="contactus__form-links">
               <h2 className="contactus__title heading--secondary">
-                Contact us{" "}
+                Contact us
               </h2>
               <div className="contactus__form">
                 <Form>

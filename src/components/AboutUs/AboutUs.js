@@ -36,7 +36,7 @@ const AboutUs = () => {
           </g>{" "}
         </svg>
       </div>
-      <div className="content">
+      <div className="aboutus__content content">
         <div className="aboutus__intro row">
           <div className="aboutus__intro-content">
             <h3 className="aboutus__sub-title heading--tertiary">Who we are</h3>

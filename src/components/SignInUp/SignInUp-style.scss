@@ -1,11 +1,100 @@
 @import "../../util/scss/mixins";
 .sign-in-up {
-  height: calc(100vh - 6rem);
-  position: relative;
-  margin-top: 6rem;
-  background-image: url("../../assets/images/sahara_morocco.jpg");
-  background-position: bottom;
-  background-size: cover;
+  &__separator {
+    @include centerElement;
+    left: 48.5%;
+    width: 1px;
+    height: 80%;
+    border-left: 1px solid var(--orange);
+    & > span {
+      @include centerElement;
+      border-radius: 50%;
+      border: 1px solid var(--orange);
+      width: 8rem;
+      height: 8rem;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--orange);
+    }
+    @include respond(meduim-screen) {
+      position: relative;
+      width: 80%;
+      height: 1px;
+      border-bottom: 1px solid var(--orange);
+      margin: 6rem 0;
+    }
+  }
+  &__header {
+    height: 60vh;
+    @include respond(meduim-screen) {
+      height: 40vh;
+    }
+    position: relative;
+
+    background-image: linear-gradient(
+        45deg,
+        rgba(234, 115, 40, 0.3),
+        rgba(234, 115, 39, 0.4)
+      ),
+      url("../../assets/images/sahara_morocco.jpg");
+
+    background-size: cover;
+    background-position: bottom;
+  }
+  & &__sub-title {
+    width: 80%;
+    @include respond(phone) {
+      width: 100%;
+    }
+    margin: auto;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include respond(meduim-screen) {
+      flex-direction: column;
+    }
+  }
+  &__social {
+    width: 50%;
+    position: relative;
+    padding: 2rem;
+    @include respond(meduim-screen) {
+      width: 100%;
+    }
+  }
+  & &__title {
+    color: white;
+    @include centerElement;
+    font-weight: bold;
+    font-size: 3rem;
+    width: 90%;
+    max-width: 80rem;
+  }
+  &__curve {
+    position: absolute;
+    width: 102%;
+    bottom: -3px;
+    left: -3px;
+  }
+  &__header-icon {
+    transform: rotate(10deg) translate(20%, 30%);
+    width: auto;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    fill-opacity: 0.3;
+  }
+
   &__list {
     background-color: rgba(0, 0, 0, 0.05);
     & > ul {
@@ -35,14 +124,21 @@
     color: var(--orange);
     padding: 2rem 3rem;
   }
-  &__container {
-    @include centerElement;
-    width: 60%;
-    @include respond(tab-port) {
+  &__forms {
+    padding: 2rem;
+    width: 50%;
+
+    @include respond(meduim-screen) {
       width: 100%;
     }
+  }
+  &__inscrp {
+    position: relative;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.15);
+    width: 100%;
     height: 67rem;
     max-width: 50rem;
+    margin: auto;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -83,5 +179,86 @@
     height: auto;
     fill-opacity: 0.15;
     transform: translate(30%, -30%) rotate(25deg);
+  }
+  &__content {
+    margin-top: -6rem;
+  }
+}
+
+.social-inscrp {
+  margin: auto;
+  margin-top: 16rem;
+  @include respond(meduim-screen) {
+    margin-top: 0;
+  }
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  &__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__label {
+    color: var(--gray);
+    font-size: 2rem;
+    margin-left: 10%;
+    white-space: nowrap;
+  }
+  &__button {
+    position: relative;
+    cursor: pointer;
+    width: 80%;
+    @include respond(phone) {
+      width: 100%;
+    }
+    max-width: 45rem;
+    margin: auto;
+    outline: none;
+    background-color: transparent;
+    display: block;
+    border: 1px solid var(--orange);
+    border-radius: 100px;
+    padding: 2rem 3rem;
+    &-content {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      text-align: left;
+      align-items: center;
+    }
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    &:hover {
+      background-color: #ff75000d;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    font-size: 3rem;
+    height: 3rem;
+
+    &--google {
+      width: 3rem;
+      display: inline-block;
+      fill: currentColor;
+      vertical-align: top;
+      font-size: 16px;
+    }
+
+    &--facebook {
+      color: #3b5998;
+    }
+
+    &--twitter {
+      color: rgb(29, 161, 242);
+    }
   }
 }

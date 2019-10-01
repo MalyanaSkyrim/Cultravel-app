@@ -7,7 +7,9 @@ import Story from "./Story";
 const Testimonials = ({ stories = [] }) => {
   return (
     <div className="testimonials row">
-      <h2 className="testimonials__title heading--secondary">Testimonials</h2>
+      <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
+        <h2 className="testimonials__title heading--secondary">Testimonials</h2>
+      </ScrollAnimation>
 
       {stories.map((story, index) => (
         <ScrollAnimation
