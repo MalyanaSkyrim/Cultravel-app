@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-import "./ContentHomePage-style.scss";
+import React from "react";
+import "./HomePage-style.scss";
 import Features from "../Features/FeaturesContainer";
 import RecommendedPlaces from "../RecommendedPlaces/RecommendedPlacesContainer";
 import SponsoredPlaces from "../SponsoredPlaces/SponsoredPlacesContainer";
 import Contactus from "../Contactus/ContactusContainer";
 import AboutMorocco from "../AboutMorocco/AboutMoroccoContainer";
 import Testimonials from "../Testimonials/TestimonialsContainer";
-import Loader from "../Loader/LoaderContainer";
+import HeaderHomePage from "../HeaderHomePage/HeaderHomePageContainer";
 
-const ContentHomePage = () => {
+const HomePage = () => {
   return (
     <div className="homepage">
+      <HeaderHomePage></HeaderHomePage>
       <div className="homepage__content">
         <Features></Features>
         <AboutMorocco></AboutMorocco>
@@ -23,4 +24,4 @@ const ContentHomePage = () => {
   );
 };
 
-export default ContentHomePage;
+export default HomePage;

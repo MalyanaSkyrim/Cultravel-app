@@ -7,8 +7,8 @@
  
 - content
 
-   -- ContentHomePage
-   -- ContentCityPage
+   -- HomePage
+   -- CityPage
     --- AboutCity
     --- BestAttractions
     ???    

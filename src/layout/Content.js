@@ -1,12 +1,13 @@
 import React from "react";
-import Layout from "./Layout";
-import ContentRouter from "../routes/ContentRouter";
+import NavBar from "./layoutComp/NavBar/NabBar";
+import PagesRouter from "../routes/PagesRouter";
 
 const Content = () => {
   return (
-    <Layout>
-      <ContentRouter></ContentRouter>
-    </Layout>
+    <div className="container">
+      <NavBar />
+      <PagesRouter />
+    </div>
   );
 };
 
