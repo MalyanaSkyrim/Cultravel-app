@@ -1,7 +1,7 @@
 import React from "react";
-import RecommendedPlaces from "./RecommendedPlaces";
+import PopularCities from "./PopularCities";
 
-const RecommendedPlacesContainer = () => {
+const PopularCitiesContainer = () => {
   const data = [
     {
       cityname: "Ouarzazate",
@@ -25,7 +25,7 @@ const RecommendedPlacesContainer = () => {
                 of type and scrambled it to make a type specimen book.`
     }
   ];
-  return <RecommendedPlaces data={data} />;
+  return <PopularCities data={data} />;
 };
 
-export default RecommendedPlacesContainer;
+export default PopularCitiesContainer;

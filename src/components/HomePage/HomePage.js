@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage-style.scss";
 import Features from "../Features/FeaturesContainer";
-import RecommendedPlaces from "../RecommendedPlaces/RecommendedPlacesContainer";
+import PopularCities from "../PopularCities/PopularCitiesContainer";
 import SponsoredPlaces from "../SponsoredPlaces/SponsoredPlacesContainer";
 import Contactus from "../Contactus/ContactusContainer";
 import AboutMorocco from "../AboutMorocco/AboutMoroccoContainer";
@@ -12,10 +12,10 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <HeaderHomePage></HeaderHomePage>
-      <div className="homepage__content">
+      <div className="content">
         <Features></Features>
         <AboutMorocco></AboutMorocco>
-        <RecommendedPlaces></RecommendedPlaces>
+        <PopularCities></PopularCities>
         <SponsoredPlaces></SponsoredPlaces>
         <Testimonials></Testimonials>
         <Contactus></Contactus>

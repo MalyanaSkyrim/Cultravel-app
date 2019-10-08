@@ -6,6 +6,9 @@
 }
 .story {
   width: 75%;
+  @include respond(phone) {
+    width: 95%;
+  }
   margin: auto;
   box-shadow: 0 3rem 6rem rgba(black, 0.1);
   background-color: rgba(white, 0.6);
@@ -13,6 +16,9 @@
   padding: 6rem;
   font-size: 1.6rem;
   transform: skewX(-16deg);
+  @include respond(phone) {
+    transform: skewX(-6deg);
+  }
   &:not(:last-child) {
     margin-bottom: 10rem;
   }
@@ -30,6 +36,9 @@
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: skewX(16deg);
+    @include respond(phone) {
+      transform: skewX(6deg);
+    }
   }
 
   &__image {
@@ -44,6 +53,9 @@
 
   &__text {
     transform: translateX(3rem) skewX(16deg);
+    @include respond(phone) {
+      transform: translateX(3rem) skewX(6deg);
+    }
   }
   &__caption {
     position: absolute;

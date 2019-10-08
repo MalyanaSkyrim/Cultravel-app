@@ -1,21 +1,21 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./RecommendedPlaces-style.scss";
-import RecommendedPlace from "./RecommendedPlace";
+import "./PopularCities-style.scss";
+import PopularCity from "./PopularCity";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const RecommendedPlaces = ({ data }) => {
+const PopularCities = ({ data }) => {
   return (
     <div className="row">
       <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
-        <h2 className="heading--secondary recommended-places__title">
+        <h2 className="heading--secondary popular-cities__title">
           Popular Cities
         </h2>
       </ScrollAnimation>
       <ScrollAnimation
         animateOnce={true}
-        className="recommended-places"
+        className="popular-cities"
         animateIn="fadeInUp"
         duration={3}
       >
@@ -27,11 +27,11 @@ const RecommendedPlaces = ({ data }) => {
           interval={5000}
         >
           {data.map((item, index) => (
-            <RecommendedPlace
+            <PopularCity
               index={index + 1}
               cityname={item.cityname}
               descrp={item.descrp}
-            ></RecommendedPlace>
+            ></PopularCity>
           ))}
         </Carousel>
       </ScrollAnimation>
@@ -39,4 +39,4 @@ const RecommendedPlaces = ({ data }) => {
   );
 };
 
-export default RecommendedPlaces;
+export default PopularCities;

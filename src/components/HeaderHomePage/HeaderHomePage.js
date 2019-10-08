@@ -5,6 +5,7 @@ import Selector from "../../kit/Selector/Selector";
 const HeaderHomePage = () => {
   return (
     <header className="header-home-page">
+      <div className="header-home-page__background"></div>
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
           <source src="assets/video/morocco-bg.mp4" type="video/mp4" />
