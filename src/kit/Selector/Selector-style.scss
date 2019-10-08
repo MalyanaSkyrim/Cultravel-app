@@ -1,9 +1,12 @@
 .selector {
-  position: relative;
+  position: absolute;
   color: var(--gray);
   font-size: 2rem;
   width: fit-content;
   margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+
   & &__button {
     position: absolute;
     right: 6px;

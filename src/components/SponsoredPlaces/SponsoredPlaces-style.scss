@@ -81,13 +81,7 @@
   }
 
   &__title {
-    position: absolute;
-    left: 2rem;
-    top: 20%;
-    letter-spacing: 0.2rem;
-    & h3 {
-      font-size: 3rem;
-    }
+    margin-bottom: 2rem;
   }
 
   &__descrp {

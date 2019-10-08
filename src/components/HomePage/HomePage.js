@@ -7,6 +7,8 @@ import Contactus from "../Contactus/ContactusContainer";
 import AboutMorocco from "../AboutMorocco/AboutMoroccoContainer";
 import Testimonials from "../Testimonials/TestimonialsContainer";
 import HeaderHomePage from "../HeaderHomePage/HeaderHomePageContainer";
+import RecommendedPlaces from "../RecommendedPlaces/RecommendedPlacesContainer";
+import Festivals from "../Festivals/FestivalsContainer";
 
 const HomePage = () => {
   return (
@@ -16,6 +18,8 @@ const HomePage = () => {
         <Features></Features>
         <AboutMorocco></AboutMorocco>
         <PopularCities></PopularCities>
+        <RecommendedPlaces></RecommendedPlaces>
+        <Festivals></Festivals>
         <SponsoredPlaces></SponsoredPlaces>
         <Testimonials></Testimonials>
         <Contactus></Contactus>

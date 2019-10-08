@@ -1,0 +1,27 @@
+.recommended-item {
+  margin: 2rem;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 90%;
+  &__img-container {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__descrp {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  &__content {
+    padding: 2rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

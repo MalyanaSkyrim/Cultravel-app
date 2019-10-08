@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import Button from "./Button";
 
- const ButtonContainer = () => {
-	 return <Button/>; 
-	} 
+const ButtonContainer = ({ children }) => {
+  return <Button children={children} />;
+};
 
 export default ButtonContainer;
