@@ -1,11 +1,17 @@
 .selector {
-  position: absolute;
-  color: var(--gray);
+  position: relative;
   font-size: 2rem;
-  width: fit-content;
+  color: var(--gray);
+  width: 80%;
   margin: auto;
-  left: 50%;
-  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+
+  &:focus-within {
+    width: 100%;
+  }
+  &:focus-within &__icon {
+    animation: check 0.7s 0.3s ease-in-out normal;
+  }
 
   & &__button {
     position: absolute;
@@ -16,13 +22,14 @@
     transform: translateY(-50%);
     opacity: 0;
     visibility: hidden;
-    &.city-selected {
+    &.option-selected {
       opacity: 1;
       visibility: visible;
     }
   }
 
   & input {
+    width: 100%;
     border-radius: 3rem;
     outline: none;
     border: none;
@@ -31,13 +38,6 @@
     padding: 1.7rem 6rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease-in;
-    &:focus {
-      padding-right: 12rem;
-    }
-  }
-
-  &:focus-within &__icon {
-    animation: check 0.7s 0.3s ease-in-out normal;
   }
 
   &__list {
@@ -65,10 +65,14 @@
   &__icon {
     color: var(--orange);
     position: absolute;
-    left: 2rem;
+    left: 2.5rem;
     font-size: 2.5rem;
     top: 53%;
     transform: translateY(-50%);
+  }
+
+  &__form > div:last-child {
+    width: 100%;
   }
 }
 

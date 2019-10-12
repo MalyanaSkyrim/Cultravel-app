@@ -1,3 +1,56 @@
+@import "../../util/scss/mixins";
 .header-city {
-  background-color: rgb(211, 145, 45);
+  position: relative;
+  margin-top: 6rem;
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  &__heading {
+    @include centerElement;
+    text-align: center;
+    & > .heading--primary {
+      color: white;
+      font-weight: 700;
+      font-size: 12rem;
+    }
+  }
+  &__nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    &-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+    }
+  }
+
+  &__selector {
+    width: 30%;
+    display: flex;
+  }
+  &__menu {
+    width: 70%;
+  }
+}
+
+.nav-city {
+  font-size: 2.3rem;
+  color: white;
+  font-weight: 700;
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+  }
+  &__item {
+    padding: 2rem;
+    cursor: pointer;
+    @include transition(white);
+    margin-bottom: 2px;
+  }
 }

@@ -3,11 +3,23 @@ import AutoComplete from "react-autocomplete";
 import "./Selector-style.scss";
 import Button from "../CustomForm/Button/Button";
 
-const Selector = () => {
+const Selector = ({
+  placeholder,
+  icon,
+  transition = "center",
+  submitAction,
+  customMenuStyle
+}) => {
   let [searchWord, setSearchWord] = useState("");
   let [isSelected, setIsSelected] = useState(false);
   let [cursor, setCursor] = useState(0);
   let [currentItem, setCurrentItem] = useState("");
+
+  //transition :
+  //center: Default
+  //right
+
+  const selectorStyle = transition === "right" ? { margin: "auto 0" } : {};
 
   const handleKeyDown = e => {
     // arrow up/down button should select next/previous list element
@@ -20,16 +32,16 @@ const Selector = () => {
 
   const items = [
     {
-      id: "rabat",
-      label: "Rabat"
-    },
-    {
       id: "tanger",
       label: "Tanger"
     },
     {
-      id: "fes",
-      label: "Fes"
+      id: "ouarzazate",
+      label: "Ouarzazate"
+    },
+    {
+      id: "chefchaouen",
+      label: "Chefchaouen"
     }
   ];
 
@@ -38,13 +50,15 @@ const Selector = () => {
     if (!isSelected) {
       setSearchWord(currentItem);
       setIsSelected(true);
-    } else alert("searchword : " + searchWord);
+    } else {
+      submitAction(searchWord);
+    }
   };
-  let buttonClass = isSelected ? "city-selected" : "";
+  let buttonClass = isSelected ? "option-selected" : "";
 
   return (
-    <div className="selector">
-      <i className="selector__icon fas fa-map-marker-alt"></i>
+    <div className="selector" style={selectorStyle}>
+      {icon}
       <form className="selector__form" onSubmit={HandleSubmit}>
         <Button containerClass={`selector__button  ${buttonClass}`}> Go</Button>
         <AutoComplete
@@ -71,7 +85,7 @@ const Selector = () => {
           items={items}
           value={searchWord}
           inputProps={{
-            placeholder: "Choose your destination",
+            placeholder: placeholder,
             onKeyDown: handleKeyDown
           }}
           onChange={e => setSearchWord(e.target.value)}
@@ -84,7 +98,9 @@ const Selector = () => {
             left: "5%",
             width: "90%",
             minWidth: "0",
-            top: "calc(100% + 4px)"
+            top: "calc(100% + 4px)",
+            borderRadius: "8px",
+            ...customMenuStyle
           }}
         ></AutoComplete>
       </form>

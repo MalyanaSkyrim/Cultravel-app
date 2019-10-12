@@ -1,8 +1,13 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import "./HeaderHomePage-style.scss";
 import Selector from "../../kit/Selector/Selector";
 
-const HeaderHomePage = () => {
+const HeaderHomePage = props => {
+  const submitAction = city => {
+    props.history.push("/city/" + city.toLowerCase());
+  };
+
   return (
     <header className="header-home-page">
       <div className="header-home-page__background"></div>
@@ -20,11 +25,15 @@ const HeaderHomePage = () => {
         </h2>
 
         <div className="city-selector">
-          <Selector></Selector>
+          <Selector
+            submitAction={submitAction}
+            placeholder={"Choose your destination"}
+            icon={<i className="selector__icon fas fa-map-marker-alt"></i>}
+          ></Selector>
         </div>
       </div>
     </header>
   );
 };
 
-export default HeaderHomePage;
+export default withRouter(HeaderHomePage);

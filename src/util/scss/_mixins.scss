@@ -47,11 +47,14 @@
   }
 }
 
-@mixin transition {
+@mixin transition($color) {
+  position: relative;
+  display: flex;
+  justify-content: center;
   &::after {
     content: "";
     position: absolute;
-    border-bottom: 2px solid var(--color);
+    border-bottom: 2px solid $color;
     bottom: 0;
     width: 0;
     transition: all 0.3s;
@@ -79,7 +82,8 @@
 
 .heading {
   color: var(--orange);
-  text-transform: uppercase;
+  text-align: center;
+
   &--primary {
     font-size: 7rem;
     @include respond(phone) {
@@ -90,11 +94,15 @@
       font-weight: 400;
     }
     letter-spacing: 2.2rem;
+    color: var(--orange);
+    text-transform: uppercase;
   }
   &--sub {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.15rem;
+    color: white;
+    text-transform: uppercase;
   }
   &--secondary {
     font-size: 3.5rem;
