@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1846407a532a6bfaf1c9a238bdaa96a7",
+    "revision": "b9d1270b613f999aa8af355fabb54ce2",
     "url": "/Cultravel-app/index.html"
   },
   {
-    "revision": "e4b4c0b464d23aed96b0",
+    "revision": "b71eb0ab809e64c75a07",
     "url": "/Cultravel-app/static/css/2.3adb8020.chunk.css"
   },
   {
-    "revision": "13a699e4d4cf347e80ed",
-    "url": "/Cultravel-app/static/css/main.304318c6.chunk.css"
+    "revision": "cae1f0b177ae48ef8b3f",
+    "url": "/Cultravel-app/static/css/main.2ed66a88.chunk.css"
   },
   {
-    "revision": "e4b4c0b464d23aed96b0",
-    "url": "/Cultravel-app/static/js/2.53188b7c.chunk.js"
+    "revision": "b71eb0ab809e64c75a07",
+    "url": "/Cultravel-app/static/js/2.b7dd7e4a.chunk.js"
   },
   {
-    "revision": "13a699e4d4cf347e80ed",
-    "url": "/Cultravel-app/static/js/main.80c47cd5.chunk.js"
+    "revision": "cae1f0b177ae48ef8b3f",
+    "url": "/Cultravel-app/static/js/main.5e2745a3.chunk.js"
   },
   {
     "revision": "45d3c8340ee40659fbeb",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c55e8a8e6f79467c0302ac2b2c46bd7b",
     "url": "/Cultravel-app/static/media/morocco-ouarzazate.c55e8a8e.jpg"
+  },
+  {
+    "revision": "c6f5917e59cd22ea1cbb54ef23cf73cd",
+    "url": "/Cultravel-app/static/media/pattern.c6f5917e.svg"
   },
   {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
