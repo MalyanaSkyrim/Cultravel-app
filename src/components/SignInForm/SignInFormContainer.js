@@ -2,8 +2,13 @@ import React from "react";
 import SignInForm from "./SignInForm";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { useSelector, useDispatch } from "react-redux";
+import { signIn } from "../../redux/actions/actionCreators/authActions";
 
 const SignInFormContainer = ({ itemClass }) => {
+  const dispatch = useDispatch();
+  const signIn_ = data => dispatch(signIn(data));
+
   const SigninSchema = Yup.object().shape({
     username: Yup.string()
       .min(2, "Too Short")
@@ -30,11 +35,8 @@ const SignInFormContainer = ({ itemClass }) => {
       //   }
       //   return errors;
       // }}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
+      onSubmit={async (values, { setSubmitting }) => {
+        await signIn_(values);
       }}
     >
       {({

@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
+import types from "../../../redux/actions/actionTypes";
 import "./navbar.scss";
 
 const NavBar = props => {
   let [current, setCurrent] = useState("test");
   let [scrollY, setScrollY] = useState(0);
+  const isAuthenticated = useSelector(
+    state => state.authReducer.isAuthenticated
+  );
 
+  const dispatch = useDispatch();
   const handleScroll = () => {
     setScrollY(window.pageYOffset);
   };
@@ -60,14 +66,28 @@ const NavBar = props => {
             </li>
           </Link>
 
-          <Link to="/sign">
+          <Link to="/account">
             <li
-              key="sign"
-              className={`menu__item ${current == "sign" ? "active" : ""}`}
+              key="account"
+              className={`menu__item ${current == "account" ? "active" : ""}`}
             >
-              Account
+              <i
+                className={
+                  (isAuthenticated ? "fas" : "far") + " fa-user menu__icon"
+                }
+              ></i>
+              {isAuthenticated ? "My account" : "Account"}
             </li>
           </Link>
+          {isAuthenticated && (
+            <li
+              onClick={() => dispatch({ type: types.LOGOUT })}
+              className={`menu__item ${current == "logout" ? "active" : ""}`}
+            >
+              <i className="menu__icon fas fa-sign-out-alt"></i>
+              Logout
+            </li>
+          )}
         </ul>
       </div>
     </div>

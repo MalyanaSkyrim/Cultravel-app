@@ -9,19 +9,14 @@ import PageItem from "../kit/PageItem/PageItemContainer";
 import AboutUs from "../components/AboutUs/AboutUsContainer";
 import NotFound from "../components/NotFound/NotFoundContainer";
 import SignInUp from "../components/SignInUp/SignInUpContainer";
-import emitter from "../eventEmitter";
 
 const PagesRouter = ({ location }) => {
-  useEffect(() => {
-    emitter.emit("loading");
-  }, [location.pathname]);
-
   return (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/about" component={AboutUs} />
       <Route path="/not-found" component={NotFound}></Route>
-      <Route path="/sign" component={SignInUp} />
+      <Route path="/account" component={SignInUp} />
       <Route exact path="/city/:city_id" component={CityPage} />
       <Route exact path="/city/:city_id/hotels" component={HotelsPage} />
       <Route exact path="/city/:city_id/food-drink" component={FoodDrinkPage} />

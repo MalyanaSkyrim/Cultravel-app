@@ -53,16 +53,18 @@ const SignUpForm = ({
       <Input
         required
         itemClass="sign-in-up__input"
-        id="confPassword"
+        id="confirmPassword"
         type="password"
         label="Confirm password :"
         onChange={handleChange}
         onBlur={handleBlur}
-        value={values.confPassword}
+        value={values.confirmPassword}
       >
-        {errors.confPassword && touched.confPassword && errors.confPassword}
+        {errors.confirmPassword &&
+          touched.confirmPassword &&
+          errors.confirmPassword}
       </Input>
-      <Button disabled={isSubmitting}>Submit</Button>
+      <Button>Submit</Button>
     </Form>
   );
 };

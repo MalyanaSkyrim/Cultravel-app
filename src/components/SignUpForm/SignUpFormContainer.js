@@ -1,9 +1,14 @@
 import React from "react";
-import SignUpForm from "./SignUpForm";
+import { useDispatch } from "react-redux";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import SignUpForm from "./SignUpForm";
+import { signUp } from "../../redux/actions/actionCreators/authActions";
 
 const SignUpFormContainer = ({ itemClass }) => {
+  const dispatch = useDispatch();
+  const signUp_ = data => dispatch(signUp(data));
+
   const SignupSchema = Yup.object().shape({
     username: Yup.string()
       .min(2, "Too Short")
@@ -12,7 +17,7 @@ const SignUpFormContainer = ({ itemClass }) => {
     password: Yup.string()
       .min(8, "Length of password must be at least 8 characters")
       .required("Required"),
-    confPassword: Yup.string()
+    confirmPassword: Yup.string()
       .required("Required")
       .oneOf([Yup.ref("password"), null], "Passwords must match"),
     email: Yup.string()
@@ -25,7 +30,7 @@ const SignUpFormContainer = ({ itemClass }) => {
         username: "",
         email: "",
         password: "",
-        confPassword: ""
+        confirmPassword: ""
       }}
       validationSchema={SignupSchema}
       //   validate={values => {
@@ -46,19 +51,16 @@ const SignUpFormContainer = ({ itemClass }) => {
       //     } else if (values.password.length < 8) {
       //       errors.password = "length of password must be at least 8 characters";
       //     }
-      //     if (!values.confPassword) {
-      //       errors.confPassword = "Required";
-      //     } else if (values.confPassword != values.password) {
-      //       errors.confPassword = "password do not match";
+      //     if (!values.confirmPassword) {
+      //       errors.confirmPassword = "Required";
+      //     } else if (values.confirmPassword != values.password) {
+      //       errors.confirmPassword = "password do not match";
       //     }
 
       //     return errors;
       //   }}
       onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
+        signUp_(values);
       }}
     >
       {({

@@ -6,7 +6,8 @@ const Button = ({
   itemClass = "",
   containerClass = "",
   children,
-  disabled
+  disabled,
+  ...restProps
 }) => {
   //types : ---------------
   //primary : default
@@ -14,7 +15,11 @@ const Button = ({
   //link
   return (
     <div className={"form__group " + containerClass}>
-      <button className={`btn btn--${type} ${itemClass}`} disabled={disabled}>
+      <button
+        {...restProps}
+        className={`btn btn--${type} ${itemClass}`}
+        disabled={disabled}
+      >
         {children}
       </button>
     </div>
