@@ -45,18 +45,36 @@ const NavBar = props => {
         : {}
       : primaryStyle;
 
+  const menuBurgerColor =
+    current == "home" && scrollY < (2 * window.innerHeight) / 3
+      ? "white"
+      : "dark";
+
   return (
     <div className="menu__container" style={menuContainerStyle}>
+      <label for="sidemenu-check">
+        <div className="menu__burger-container">
+          <span
+            className={`menu__burger menu__burger--${menuBurgerColor}`}
+          ></span>
+        </div>
+      </label>
+      <input
+        id="sidemenu-check"
+        className="menu__check"
+        type="checkbox"
+      ></input>
+
       <div className="menu">
         <Link to="/">
           <div
             key="home"
-            className={`menu__item ${current == "home" ? "active" : ""}`}
+            className={`menu__item logo ${current == "home" ? "active" : ""}`}
           >
             Logo
           </div>
         </Link>
-        <ul className="menu__right-side">
+        <div className="menu__side">
           <Link to="/about">
             <li
               key="about"
@@ -65,30 +83,31 @@ const NavBar = props => {
               About
             </li>
           </Link>
-
-          <Link to="/account">
-            <li
-              key="account"
-              className={`menu__item ${current == "account" ? "active" : ""}`}
-            >
-              <i
-                className={
-                  (isAuthenticated ? "fas" : "far") + " fa-user menu__icon"
-                }
-              ></i>
-              {isAuthenticated ? "My account" : "Account"}
-            </li>
-          </Link>
-          {isAuthenticated && (
-            <li
-              onClick={() => dispatch({ type: types.LOGOUT })}
-              className={`menu__item ${current == "logout" ? "active" : ""}`}
-            >
-              <i className="menu__icon fas fa-sign-out-alt"></i>
-              Logout
-            </li>
-          )}
-        </ul>
+          <ul className="menu__right-side">
+            <Link to="/account">
+              <li
+                key="account"
+                className={`menu__item ${current == "account" ? "active" : ""}`}
+              >
+                <i
+                  className={
+                    (isAuthenticated ? "fas" : "far") + " fa-user menu__icon"
+                  }
+                ></i>
+                {isAuthenticated ? "My account" : "Account"}
+              </li>
+            </Link>
+            {isAuthenticated && (
+              <li
+                onClick={() => dispatch({ type: types.LOGOUT })}
+                className={`menu__item ${current == "logout" ? "active" : ""}`}
+              >
+                <i className="menu__icon fas fa-sign-out-alt"></i>
+                Logout
+              </li>
+            )}
+          </ul>
+        </div>
       </div>
     </div>
   );

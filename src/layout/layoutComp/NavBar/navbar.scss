@@ -9,6 +9,10 @@
   height: 6rem;
   color: var(--color);
 
+  &__side {
+    display: flex;
+    font-size: 2rem;
+  }
   &__container {
     --color: white;
     width: 100%;
@@ -19,15 +23,86 @@
     transition: all 0.3s;
   }
 
+  &__burger {
+    &-container {
+      width: 4rem;
+      height: 6rem;
+      position: absolute;
+      left: 1rem;
+      cursor: pointer;
+      visibility: hidden;
+      @include respond(tab-land) {
+        visibility: visible;
+      }
+    }
+
+    top: 50%;
+    transform: translateY(-50%);
+    &--white {
+      --menuColor: white;
+    }
+    &--dark {
+      --menuColor: var(--dark-gray);
+    }
+    &,
+    &::after,
+    &::before {
+      content: "";
+      width: 4rem;
+      height: 2px;
+      position: absolute;
+      display: inline-block;
+      transition: 0.2s all;
+      background-color: var(--menuColor);
+    }
+    &::after {
+      background-color: inherit;
+      transform: translateY(0.9rem);
+    }
+    &::before {
+      background-color: inherit;
+      transform: translateY(-0.9rem);
+    }
+    &-container:hover &::after {
+      transform: translateY(1.1rem);
+    }
+    &-container:hover &::before {
+      transform: translateY(-1.1rem);
+    }
+  }
+
+  &__check {
+    display: none;
+  }
+  &__check:checked ~ & &__right-side {
+    transform: translateX(0);
+  }
+
   &__right-side {
-    font-size: 2rem;
     font-weight: 500;
     position: relative;
     display: flex;
-  }
-
-  & ul {
     list-style: none;
+    @include respond(tab-land) {
+      display: block;
+      padding: 2rem;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      transform: translateX(-100%);
+      background-color: white;
+      transition: 0.3s all;
+      & .menu__item {
+        justify-content: unset;
+        padding-left: 1.5rem;
+        color: var(--dark-gray);
+      }
+
+      & > a:not(:last-child) > .menu__item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      }
+    }
   }
 
   &__item {
