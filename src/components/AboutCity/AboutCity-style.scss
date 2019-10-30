@@ -1,2 +1,9 @@
 .aboutcity {
+  height: 60rem;
+  & &__title {
+    text-align: left;
+  }
+  &__text {
+    font-size: 1.8rem;
+  }
 }

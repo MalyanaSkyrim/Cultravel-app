@@ -107,7 +107,7 @@ const HeaderCity = ({ city, currenturl, ...props }) => {
                   ></input>
                   <label
                     onClick={() => showSideMenu(!smIsShown)}
-                    for="sideMenu-check"
+                    htmlFor="sideMenu-check"
                     className="header-city__label-plusIcon"
                   >
                     <i className="header-city__plus-icon fas fa-plus"></i>

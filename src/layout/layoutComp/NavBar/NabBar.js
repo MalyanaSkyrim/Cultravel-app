@@ -52,7 +52,7 @@ const NavBar = props => {
 
   return (
     <div className="menu__container" style={menuContainerStyle}>
-      <label for="sidemenu-check">
+      <label htmlFor="sidemenu-check">
         <div className="menu__burger-container">
           <span
             className={`menu__burger menu__burger--${menuBurgerColor}`}

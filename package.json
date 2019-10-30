@@ -17,6 +17,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-autocomplete": "^1.8.1",
     "react-dom": "^16.9.0",
+    "react-google-maps": "^9.4.5",
     "react-i18next": "^10.12.4",
     "react-multi-carousel": "^2.2.6",
     "react-redux": "^7.1.1",
