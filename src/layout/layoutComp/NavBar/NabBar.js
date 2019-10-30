@@ -75,15 +75,16 @@ const NavBar = props => {
           </div>
         </Link>
         <div className="menu__side">
-          <Link to="/about">
-            <li
-              key="about"
-              className={`menu__item ${current == "about" ? "active" : ""}`}
-            >
-              About
-            </li>
-          </Link>
           <ul className="menu__right-side">
+            <Link to="/services">
+              <li
+                key="services"
+                className={`menu__item ${current == "service" ? "active" : ""}`}
+              >
+                <i className="menu__icon fas fa-cogs"></i>
+                Services
+              </li>
+            </Link>
             <Link to="/account">
               <li
                 key="account"
@@ -107,6 +108,14 @@ const NavBar = props => {
               </li>
             )}
           </ul>
+          <Link to="/about">
+            <li
+              key="about"
+              className={`menu__item ${current == "about" ? "active" : ""}`}
+            >
+              About
+            </li>
+          </Link>
         </div>
       </div>
     </div>

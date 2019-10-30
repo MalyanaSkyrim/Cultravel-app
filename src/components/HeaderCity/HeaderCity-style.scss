@@ -3,9 +3,13 @@
   position: relative;
   margin-top: 6rem;
   height: 70vh;
+  @include respond(phone) {
+    height: 45vh;
+  }
   width: 100%;
   background-size: cover;
   background-position: center;
+
   &__plus-icon {
     position: relative;
     z-index: 99;
@@ -19,42 +23,15 @@
     }
   }
 
+  &__label-plusIcon {
+    position: relative;
+  }
   &__check {
     display: none;
   }
-  &__sideMenu {
-    position: fixed;
-    top: 14rem;
-    left: 6rem;
-    width: 80vw;
-    height: 80vh;
-    background-color: orangered;
-    transform: scale(0);
-    transition: 0.3s 0.2s all;
-    opacity: 0;
 
-    &--shown {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    &-bg {
-      position: absolute;
-      bottom: 4rem;
-      right: 5rem;
-      transform: translate(50%, 50%);
-      width: 2rem;
-      height: 2rem;
-      transition: 0.3s all;
-      background-color: rgba(0, 0, 0, 0.75);
-      border-radius: 50%;
-      visibility: hidden;
-    }
-  }
-  &__check:checked ~ &__sideMenu-bg {
-    width: 200rem;
-    height: 200rem;
-
+  &__check:checked ~ label > &__sideMenu-bg {
+    border: 145rem solid rgba(0, 0, 0, 0.75);
     visibility: visible;
   }
 
@@ -69,6 +46,12 @@
       color: white;
       font-weight: 700;
       font-size: 12rem;
+      @include respond(tab-land) {
+        font-size: 8rem;
+      }
+      @include respond(phone) {
+        font-size: 4rem;
+      }
     }
   }
   &__nav {
@@ -96,10 +79,19 @@
     }
   }
   &__menu {
-    width: 70%;
+    width: 60%;
     @include respond(tab-land) {
       display: none;
     }
+  }
+  &__sideMenu-bg {
+    @include centerElement;
+    transition: 0.4s all ease-in-out;
+    border-radius: 50%;
+    width: 300rem;
+    height: 300rem;
+    border: 0 solid rgba(0, 0, 0, 0.75);
+    visibility: hidden;
   }
 }
 
@@ -107,11 +99,11 @@
   font-size: 2.3rem;
   color: white;
   font-weight: 700;
+  text-transform: capitalize;
   &__list {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 70%;
     margin: auto;
   }
   &__item {
@@ -119,5 +111,50 @@
     cursor: pointer;
     @include transition(white);
     margin-bottom: 2px;
+  }
+  &__icon {
+    margin-right: 1.5rem;
+  }
+}
+
+.sideMenu {
+  position: fixed;
+  top: 14rem;
+  left: 4%;
+  width: 80vw;
+  height: 80vh;
+  overflow: scroll;
+  transform: translateX(-100%);
+  transition: 0.5s all;
+  opacity: 0;
+
+  &--shown {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &__item {
+    position: relative;
+    width: 90%;
+    margin: 5% auto;
+    border: 1px solid var(--orange);
+    height: 30rem;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.43181),
+        rgba(0, 0, 0, 0.902398)
+      ),
+      url("../../assets/images/desert.jpg");
+    background-size: cover;
+  }
+  & &__title {
+    @include centerElement;
+    color: white;
+    width: 100%;
+  }
+  &__icon {
+    display: block;
+    margin-bottom: 1.5rem;
   }
 }

@@ -8,12 +8,13 @@ import "./App.scss";
 import { loadUser } from "../src/redux/actions/actionCreators/authActions";
 
 const App = () => {
-  const isLoading = useSelector(state => state.commonReducer.isLoading);
-  const dispatch = useDispatch();
-  const loadUser_ = () => dispatch(loadUser());
-  useEffect(() => {
-    loadUser_();
-  }, []);
+  const isLoading = false;
+  // const isLoading = useSelector(state => state.commonReducer.isLoading);
+  // const dispatch = useDispatch();
+  // const loadUser_ = () => dispatch(loadUser());
+  // useEffect(() => {
+  //   loadUser_();
+  // }, []);
   return isLoading ? (
     <Loader></Loader>
   ) : (

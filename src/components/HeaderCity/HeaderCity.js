@@ -69,15 +69,32 @@ const HeaderCity = ({ city, currenturl, ...props }) => {
                       <ul className="nav-city__list">
                         <li className="nav-city__item">
                           <Link to={`${currenturl}/attractions`}>
+                            <i className="nav-city__icon fas fa-landmark"></i>
                             Attractions
                           </Link>
                         </li>
                         <li className="nav-city__item">
-                          <Link to={`${currenturl}/hotels`}>Hotels</Link>
+                          <Link to={`${currenturl}/hotels`}>
+                            <i className="nav-city__icon fas fa-hotel"></i>
+                            Hotels
+                          </Link>
                         </li>
                         <li className="nav-city__item">
                           <Link to={`${currenturl}/restaurants`}>
+                            <i className="nav-city__icon fas fa-utensils"></i>
                             Restaurants
+                          </Link>
+                        </li>
+                        <li className="nav-city__item">
+                          <Link to={`${currenturl}/restaurants`}>
+                            <i className="nav-city__icon far fa-calendar-check"></i>
+                            events
+                          </Link>
+                        </li>
+                        <li className="nav-city__item">
+                          <Link to={`${currenturl}/restaurants`}>
+                            <i className="nav-city__icon fas fa-car"></i>
+                            Car Rentals
                           </Link>
                         </li>
                       </ul>
@@ -91,21 +108,47 @@ const HeaderCity = ({ city, currenturl, ...props }) => {
                   <label
                     onClick={() => showSideMenu(!smIsShown)}
                     for="sideMenu-check"
+                    className="header-city__label-plusIcon"
                   >
                     <i className="header-city__plus-icon fas fa-plus"></i>
+                    <div className="header-city__sideMenu-bg"></div>
                   </label>
-                  <div className="header-city__sideMenu-bg"></div>
                 </div>
               </div>
             </div>
           );
         }}
       </Sticky>
-      <div
-        className={`header-city__sideMenu header-city__sideMenu--${
-          smIsShown ? "shown" : ""
-        }`}
-      ></div>
+      <div className={`sideMenu sideMenu--${smIsShown ? "shown" : ""}`}>
+        <div className="sideMenu__item">
+          <h3 className="sideMenu__title heading--secondary ">
+            <i className="sideMenu__icon fas fa-landmark"></i>
+            Attractions
+          </h3>
+        </div>
+        <div className="sideMenu__item">
+          <h3 className="sideMenu__title heading--secondary ">
+            <i className="sideMenu__icon fas fa-utensils"></i>
+            Restaurants
+          </h3>
+        </div>
+        <div className="sideMenu__item">
+          <h3 className="sideMenu__title heading--secondary ">
+            <i className="sideMenu__icon fas fa-hotel"></i>
+            Hotels
+          </h3>
+        </div>
+        <div className="sideMenu__item">
+          <h3 className="sideMenu__title heading--secondary ">
+            <i className="sideMenu__icon fas fa-car"></i>Car Rentals
+          </h3>
+        </div>
+        <div className="sideMenu__item">
+          <h3 className="sideMenu__title heading--secondary ">
+            <i className="sideMenu__icon far fa-calendar-check"></i>Events
+          </h3>
+        </div>
+      </div>
     </>
   );
 };
