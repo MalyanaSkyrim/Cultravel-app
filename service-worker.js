@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Cultravel-app/precache-manifest.6250cb7d12571d81b1748ec3101d25ae.js"
+  "/Cultravel-app/precache-manifest.1b0ceca6c3246fedf8dbf0512a38eb98.js"
 );
 
 self.addEventListener('message', (event) => {
