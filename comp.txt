@@ -21,3 +21,6 @@
         -- ItemPage   
           --- ItemComments
 - Footer
+
+src image without "/" is relative to the current url
+src image with "/" is absolute, so it's relative to the baseurl

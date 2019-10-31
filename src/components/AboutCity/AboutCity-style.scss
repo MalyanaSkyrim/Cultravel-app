@@ -1,9 +1,131 @@
+@import "../../util/scss/mixins";
 .aboutcity {
-  height: 60rem;
+  display: flex;
+  justify-content: space-between;
   & &__title {
     text-align: left;
   }
   &__text {
     font-size: 1.8rem;
+  }
+  &__leftside {
+    width: 60%;
+  }
+  &__rightside {
+    width: 35%;
+  }
+  &__map {
+    margin-top: 3rem;
+    width: 60%;
+    height: 45rem;
+  }
+}
+.cityimages {
+  &--top,
+  &--bottom {
+    height: 50%;
+  }
+  &__primaryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--dark-gray);
+  }
+  &__secondaryImg {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+
+    &:last-child {
+      display: inline-block;
+      position: relative;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &--seeMore {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      & > h3 {
+        color: white;
+        @include centerElement;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+.sliderImgs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9990;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in;
+
+  &__closerSide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__popup {
+    width: 80%;
+    max-width: 100rem;
+    @include centerElement;
+    transform: translate(-20%, -50%) scale(0);
+    transition: 0.3s all;
+    &--active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & .carousel.carousel-slider {
+    height: 70vh;
+  }
+
+  & .carousel .thumb {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  & .carousel.carousel-slider .control-arrow {
+    &:before {
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      content: "";
+    }
+  }
+  &__closeIcon {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    z-index: 1;
+    font-size: 3rem;
+    color: var(--orange);
+    cursor: pointer;
   }
 }
