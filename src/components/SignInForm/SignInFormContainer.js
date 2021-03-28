@@ -35,8 +35,17 @@ const SignInFormContainer = ({ itemClass }) => {
       //   }
       //   return errors;
       // }}
-      onSubmit={async (values, { setSubmitting }) => {
-        await signIn_(values);
+      onSubmit={async (values, { setSubmitting, setFieldError, setErrors }) => {
+        const msg = await new Promise((resolve, reject) =>
+          setTimeout(() => resolve("tftahagd"), 2000)
+        );
+        // setFieldError("username", msg);
+        // setFieldError("password", msg);
+        setErrors({
+          username: msg,
+          password: "alay lay lala"
+        });
+        setSubmitting(false);
       }}
     >
       {({

@@ -13,20 +13,20 @@ const handleError = (err, dispatch) => {
 
 export const signIn = data => async dispatch => {
   try {
-    dispatch({ type: types.START_LOADER });
+    // dispatch({ type: types.START_LOADER });
     const result = await instance.post("/auth/signin", data);
-    dispatch({ type: types.SIGNIN, payload: result.data });
+    // dispatch({ type: types.SIGNIN, payload: result.data });
     const resultUser = await instance.get("/auth/user");
     const user = resultUser.data.user;
     dispatch({ type: types.LOAD_USER, payload: user });
-    dispatch({ type: types.STOP_LOADER });
-    dispatch({
-      type: types.NOTIFY,
-      payload: { id: uuid(), type: "success", msg: "signin success" }
-    });
+    // dispatch({ type: types.STOP_LOADER });
+    // dispatch({
+    //   type: types.NOTIFY,
+    //   payload: { id: uuid(), type: "success", msg: "signin success" }
+    // });
   } catch (err) {
-    dispatch({ type: types.STOP_LOADER });
-    return err;
+    // dispatch({ type: types.STOP_LOADER });
+    return err.response.data.errors[0];
   }
 };
 
